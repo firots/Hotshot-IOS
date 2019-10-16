@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HasCollectionViewDataSource: class {
-    var collectionViewDataSource: CollectionViewDataSource? { get  set }
+    var collectionViewDataSource: CollectionViewDataSource! { get  set }
     var collectionView: UICollectionView! { get set }
     func dataChanged()
 }
@@ -20,17 +20,16 @@ extension HasCollectionViewDataSource {
         collectionViewDataSource.dataChanged?()
     }
     
-    func loadDataSource() {
-        if let collectionViewDataSource = self.collectionViewDataSource {
-            collectionView.dataSource = collectionViewDataSource
-            
-            collectionViewDataSource.dataChanged =  { [weak self] in
-                self?.collectionView?.reloadData()
-            }
-            
-            if let vc = self as? CollectionViewCellDelegate {
-                collectionViewDataSource.collectionViewCellDelegate = vc
-            }
+    func loadDataSource(_ dataSource: CollectionViewDataSource) {
+        collectionViewDataSource = dataSource
+        collectionView.dataSource = collectionViewDataSource
+        
+        collectionViewDataSource!.dataChanged =  { [weak self] in
+            self?.collectionView?.reloadData()
+        }
+        
+        if let vc = self as? CollectionViewCellDelegate {
+            collectionViewDataSource!.collectionViewCellDelegate = vc
         }
     }
 }

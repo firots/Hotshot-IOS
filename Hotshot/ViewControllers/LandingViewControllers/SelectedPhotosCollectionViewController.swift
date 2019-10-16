@@ -9,13 +9,12 @@
 import UIKit
 
 class SelectedPhotosCollectionViewController: UICollectionViewController, HasCollectionViewDataSource {
-    var collectionViewDataSource: CollectionViewDataSource?
+    var collectionViewDataSource: CollectionViewDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        collectionViewDataSource = SelectedPhotosDataSource()
-        loadDataSource()
+        loadDataSource(SelectedPhotosDataSource())
     }
     
     func registerCells() {
