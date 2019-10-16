@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,7 +34,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-oP-4Cu">
                                 <rect key="frame" x="16" y="304" width="382" height="342"/>
                                 <connections>
-                                    <segue destination="nzi-lE-RUy" kind="embed" id="Lc2-g3-vh1"/>
+                                    <segue destination="Y4I-45-GJq" kind="embed" id="zAz-K4-T4X"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -77,18 +78,39 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
         <!--Selected Photos Collection View Controller-->
-        <scene sceneID="xUv-mO-00v">
+        <scene sceneID="qfm-af-lRd">
             <objects>
-                <viewController storyboardIdentifier="LandingSelectedPhotosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nzi-lE-RUy" customClass="SelectedPhotosCollectionViewController" customModule="Hotshot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="R34-B2-Pyt" customClass="UICollectionView">
+                <collectionViewController id="Y4I-45-GJq" customClass="SelectedPhotosCollectionViewController" customModule="Hotshot" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ic2-fs-Ae8">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="342"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Aeq-qG-Pjk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1J0-WX-9Uj">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b3g-Ug-Pr6">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dZU-OH-xj7">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Y4I-45-GJq" id="nGW-z0-pFL"/>
+                            <outlet property="delegate" destination="Y4I-45-GJq" id="H3y-El-84T"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="tx3-Xu-vrD"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8v-0b-dT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="-7"/>
+            <point key="canvasLocation" x="2010" y="139"/>
         </scene>
     </scenes>
 </document>
