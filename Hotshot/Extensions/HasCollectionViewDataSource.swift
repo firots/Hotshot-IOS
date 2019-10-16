@@ -24,12 +24,12 @@ extension HasCollectionViewDataSource {
         collectionViewDataSource = dataSource
         collectionView.dataSource = collectionViewDataSource
         
-        collectionViewDataSource!.dataChanged =  { [weak self] in
-            self?.collectionView?.reloadData()
+        collectionViewDataSource.dataChanged =  { [weak self] in
+            self?.collectionView.reloadData()
         }
         
         if let vc = self as? CollectionViewCellDelegate {
-            collectionViewDataSource!.collectionViewCellDelegate = vc
+            collectionViewDataSource.collectionViewCellDelegate = vc
         }
     }
 }
