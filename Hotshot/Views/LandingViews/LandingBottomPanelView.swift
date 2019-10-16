@@ -9,13 +9,9 @@
 import UIKit
 
 final class LandingBottomPanelView: CustomViewBase {
+    weak var delegate: LandingBottomPanelViewDelegate?
+}
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+protocol LandingBottomPanelViewDelegate: class {
+    func startTapped()
 }

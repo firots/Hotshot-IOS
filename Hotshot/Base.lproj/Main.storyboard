@@ -54,6 +54,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YtV-dN-xcm"/>
+                    <connections>
+                        <outlet property="landingBottomPanelView" destination="8Tc-I8-4I4" id="cM9-fQ-54f"/>
+                        <outlet property="landingTopPanelView" destination="L9O-t0-UJE" id="enS-DD-Un0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

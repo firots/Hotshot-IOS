@@ -10,20 +10,29 @@ import UIKit
 
 final class LandingViewController: UIViewController {
 
+    @IBOutlet weak var landingTopPanelView: LandingTopPanelView!
+    @IBOutlet weak var landingBottomPanelView: LandingBottomPanelView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()
-        // Do any additional setup after loading the view.
+        setDelegates()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setDelegates() {
+        landingTopPanelView.delegate = self
+        landingBottomPanelView.delegate = self
     }
-    */
+}
 
+extension LandingViewController: LandingBottomPanelViewDelegate {
+    func startTapped() {
+         
+    }
+}
+
+extension LandingViewController: LandingTopPanelViewDelegate {
+    func addTapped() {
+        
+    }
 }
