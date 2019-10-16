@@ -20,6 +20,8 @@
 		7664547A2357B735009E1A28 /* UIViewController+setNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454792357B735009E1A28 /* UIViewController+setNavigation.swift */; };
 		7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */; };
 		7664547E2357B7EA009E1A28 /* LandingBottomPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7664547D2357B7EA009E1A28 /* LandingBottomPanelView.xib */; };
+		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
+		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		766454792357B735009E1A28 /* UIViewController+setNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+setNavigation.swift"; sourceTree = "<group>"; };
 		7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBottomPanelView.swift; sourceTree = "<group>"; };
 		7664547D2357B7EA009E1A28 /* LandingBottomPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBottomPanelView.xib; sourceTree = "<group>"; };
+		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		7664544B2357A301009E1A28 /* Hotshot */ = {
 			isa = PBXGroup;
 			children = (
+				766454A62357CB5C009E1A28 /* DataSources */,
 				766454782357B70D009E1A28 /* Extensions */,
 				766454612357A71F009E1A28 /* Views */,
 				766454602357A70B009E1A28 /* ViewControllers */,
@@ -124,8 +129,17 @@
 			isa = PBXGroup;
 			children = (
 				766454792357B735009E1A28 /* UIViewController+setNavigation.swift */,
+				766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		766454A62357CB5C009E1A28 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */,
 				7664547A2357B735009E1A28 /* UIViewController+setNavigation.swift in Sources */,
 				766454772357B438009E1A28 /* SelectedPhotosCollectionViewController.swift in Sources */,
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
@@ -208,6 +223,7 @@
 				7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
+				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
 				766454712357AED5009E1A28 /* LandingTopPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
