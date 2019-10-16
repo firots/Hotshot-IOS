@@ -9,7 +9,7 @@
 import UIKit
 
 class SelectedPhotosCollectionViewController: UICollectionViewController, HasCollectionViewDataSource {
-    var collectionViewDataSource: CollectionViewDataSource!
+    var collectionViewDataSource: CollectionViewDataSource?
     
     override func viewDidLoad() {
         super.viewDidLoad()

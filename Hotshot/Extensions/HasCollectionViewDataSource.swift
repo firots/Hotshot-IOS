@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HasCollectionViewDataSource: class {
-    var collectionViewDataSource: CollectionViewDataSource! { get  set }
+    var collectionViewDataSource: CollectionViewDataSource? { get  set }
     var collectionView: UICollectionView! { get set }
     func dataChanged()
 }
