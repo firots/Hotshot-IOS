@@ -11,7 +11,11 @@ import UIKit
 final class SelectedPhotosDataSource: NSObject, CollectionViewDataSource {
     var dataChanged: (() -> Void)?
     var collectionViewCellDelegate: CollectionViewCellDelegate?
-    var model: CollectionViewModel 
+    var model: CollectionViewModel {
+        didSet {
+            dataChanged?()
+        }
+    }
     
     init(model: CollectionViewModel) {
         self.model = model

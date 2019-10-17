@@ -42,7 +42,7 @@ extension LandingViewController: LandingTopPanelViewDelegate {
                 model.sections.append(section)
             }
             model.sections[0].items.append(selectedPhotoCell)
-            selectedPhotosVC.dataChanged()
+            selectedPhotosVC.collectionViewDataSource.model = model
         }
     }
 }

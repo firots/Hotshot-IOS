@@ -18,3 +18,4 @@ final class CollectionViewSectionModel {
     var footer: String?
     var items = [CollectionViewCellModel]()
 }
+
