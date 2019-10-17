@@ -17,7 +17,7 @@
 		7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED4235908A000FB6979 /* addButton@2x.jpg */; };
 		7637CEDB2359110D00FB6979 /* SelectedPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */; };
 		7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */; };
-		7637CEE52359131F00FB6979 /* firad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEE42359131E00FB6979 /* firad.jpg */; };
+		7637CEE723591A6800FB6979 /* firad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEE623591A6800FB6979 /* firad.jpg */; };
 		7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664544C2357A301009E1A28 /* AppDelegate.swift */; };
 		766454542357A301009E1A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766454522357A301009E1A28 /* Main.storyboard */; };
 		766454562357A302009E1A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766454552357A302009E1A28 /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		7637CED4235908A000FB6979 /* addButton@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addButton@2x.jpg"; sourceTree = "<group>"; };
 		7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosCell.swift; sourceTree = "<group>"; };
 		7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPhotosCell.xib; sourceTree = "<group>"; };
-		7637CEE42359131E00FB6979 /* firad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firad.jpg; sourceTree = "<group>"; };
+		7637CEE623591A6800FB6979 /* firad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firad.jpg; sourceTree = "<group>"; };
 		766454492357A301009E1A28 /* Hotshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7664544C2357A301009E1A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		766454532357A301009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				7637CED2235908A000FB6979 /* addButton.jpg */,
 				7637CED4235908A000FB6979 /* addButton@2x.jpg */,
 				7637CED3235908A000FB6979 /* addButton@3x.jpg */,
-				7637CEE42359131E00FB6979 /* firad.jpg */,
+				7637CEE623591A6800FB6979 /* firad.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -268,11 +268,11 @@
 				766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */,
 				7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */,
 				7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */,
+				7637CEE723591A6800FB6979 /* firad.jpg in Resources */,
 				7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */,
 				7637CED5235908A000FB6979 /* addButton.jpg in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
-				7637CEE52359131F00FB6979 /* firad.jpg in Resources */,
 				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
 				7637CED6235908A000FB6979 /* addButton@3x.jpg in Resources */,
 			);
