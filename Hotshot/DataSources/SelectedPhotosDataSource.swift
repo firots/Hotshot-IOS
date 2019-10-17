@@ -11,15 +11,21 @@ import UIKit
 final class SelectedPhotosDataSource: NSObject, CollectionViewDataSource {
     var dataChanged: (() -> Void)?
     var collectionViewCellDelegate: CollectionViewCellDelegate?
+    var model: CollectionViewModel 
+    
+    init(model: CollectionViewModel) {
+        self.model = model
+        super.init()
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        model.sections.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 4
+        return model.sections[section].items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

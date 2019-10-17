@@ -57,6 +57,7 @@
                     <connections>
                         <outlet property="landingBottomPanelView" destination="8Tc-I8-4I4" id="cM9-fQ-54f"/>
                         <outlet property="landingTopPanelView" destination="L9O-t0-UJE" id="enS-DD-Un0"/>
+                        <outlet property="selectedPhotosContainer" destination="DAC-oP-4Cu" id="MJD-6u-8yt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

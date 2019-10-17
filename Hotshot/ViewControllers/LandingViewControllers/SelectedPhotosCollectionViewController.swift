@@ -17,7 +17,7 @@ class SelectedPhotosCollectionViewController: UICollectionViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        loadDataSource(SelectedPhotosDataSource())
+        loadDataSource(SelectedPhotosDataSource(model: SelectedPhotosViewModel()))
         setDZN()
     }
     

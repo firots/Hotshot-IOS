@@ -34,6 +34,7 @@
 		7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */; };
 		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
 		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
+		76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBottomPanelView.swift; sourceTree = "<group>"; };
 		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
+		76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */,
 				7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */,
+				76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				766454772357B438009E1A28 /* SelectedPhotosCollectionViewController.swift in Sources */,
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
+				76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */,
 				7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */,
 				7637CEBD2358EA7800FB6979 /* AnimatedAddButton.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,

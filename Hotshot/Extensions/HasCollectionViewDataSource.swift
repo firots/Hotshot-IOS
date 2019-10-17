@@ -37,6 +37,7 @@ extension HasCollectionViewDataSource {
 protocol CollectionViewDataSource: class, UICollectionViewDataSource {
     var dataChanged: (() -> Void)? { get set }
     var collectionViewCellDelegate: CollectionViewCellDelegate? { get set }
+    var model: CollectionViewModel { get set }
 }
 
 protocol CollectionViewCellDelegate {

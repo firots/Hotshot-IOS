@@ -16,4 +16,5 @@ protocol CollectionViewModel {
 final class CollectionViewSectionModel {
     var title: String?
     var footer: String?
+    var items = [CollectionViewCellModel]()
 }
