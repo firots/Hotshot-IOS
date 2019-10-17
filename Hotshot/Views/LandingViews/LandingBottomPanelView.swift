@@ -10,6 +10,11 @@ import UIKit
 
 final class LandingBottomPanelView: CustomViewBase {
     weak var delegate: LandingBottomPanelViewDelegate?
+    @IBOutlet var view: UIView!
+    
+    override func awakeFromNib() {
+        self.view.frame.size = self.frame.size
+    }
 }
 
 protocol LandingBottomPanelViewDelegate: class {

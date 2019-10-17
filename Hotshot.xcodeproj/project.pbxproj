@@ -8,33 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		7637CEBD2358EA7800FB6979 /* AnimatedAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */; };
-		7637CEBF2358EA8800FB6979 /* AnimatedAddButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */; };
 		7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEC12358EB0400FB6979 /* addphoto.gif */; };
 		7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEC52358FFD800FB6979 /* UIScrollView+EmptyDataSet.m */; };
+		7637CECF2359075200FB6979 /* LandingTopPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CECE2359075200FB6979 /* LandingTopPanelView.xib */; };
+		7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */; };
+		7637CED5235908A000FB6979 /* addButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED2235908A000FB6979 /* addButton.jpg */; };
+		7637CED6235908A000FB6979 /* addButton@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED3235908A000FB6979 /* addButton@3x.jpg */; };
+		7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED4235908A000FB6979 /* addButton@2x.jpg */; };
+		7637CEDB2359110D00FB6979 /* SelectedPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */; };
+		7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */; };
+		7637CEE52359131F00FB6979 /* firad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEE42359131E00FB6979 /* firad.jpg */; };
 		7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664544C2357A301009E1A28 /* AppDelegate.swift */; };
 		766454542357A301009E1A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766454522357A301009E1A28 /* Main.storyboard */; };
 		766454562357A302009E1A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766454552357A302009E1A28 /* Assets.xcassets */; };
 		766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766454572357A302009E1A28 /* LaunchScreen.storyboard */; };
 		766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454622357A93A009E1A28 /* SceneDelegate.swift */; };
-		766454652357AB83009E1A28 /* LandingTopPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766454642357AB83009E1A28 /* LandingTopPanelView.xib */; };
 		766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454672357ABF9009E1A28 /* CustomViewBase.swift */; };
 		7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664546E2357AE89009E1A28 /* LandingViewController.swift */; };
 		766454712357AED5009E1A28 /* LandingTopPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454702357AED5009E1A28 /* LandingTopPanelView.swift */; };
 		766454772357B438009E1A28 /* SelectedPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454762357B438009E1A28 /* SelectedPhotosCollectionViewController.swift */; };
 		7664547A2357B735009E1A28 /* UIViewController+setNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454792357B735009E1A28 /* UIViewController+setNavigation.swift */; };
 		7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */; };
-		7664547E2357B7EA009E1A28 /* LandingBottomPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7664547D2357B7EA009E1A28 /* LandingBottomPanelView.xib */; };
 		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
 		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAddButton.swift; sourceTree = "<group>"; };
-		7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimatedAddButton.xib; sourceTree = "<group>"; };
 		7637CEC12358EB0400FB6979 /* addphoto.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addphoto.gif; sourceTree = "<group>"; };
 		7637CEC42358FFD700FB6979 /* Hotshot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hotshot-Bridging-Header.h"; sourceTree = "<group>"; };
 		7637CEC52358FFD800FB6979 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		7637CEC62358FFD800FB6979 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		7637CECE2359075200FB6979 /* LandingTopPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingTopPanelView.xib; sourceTree = "<group>"; };
+		7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBottomPanelView.xib; sourceTree = "<group>"; };
+		7637CED2235908A000FB6979 /* addButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addButton.jpg; sourceTree = "<group>"; };
+		7637CED3235908A000FB6979 /* addButton@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addButton@3x.jpg"; sourceTree = "<group>"; };
+		7637CED4235908A000FB6979 /* addButton@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addButton@2x.jpg"; sourceTree = "<group>"; };
+		7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosCell.swift; sourceTree = "<group>"; };
+		7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPhotosCell.xib; sourceTree = "<group>"; };
+		7637CEE42359131E00FB6979 /* firad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firad.jpg; sourceTree = "<group>"; };
 		766454492357A301009E1A28 /* Hotshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7664544C2357A301009E1A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		766454532357A301009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,14 +54,12 @@
 		766454582357A302009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7664545A2357A302009E1A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766454622357A93A009E1A28 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		766454642357AB83009E1A28 /* LandingTopPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingTopPanelView.xib; sourceTree = "<group>"; };
 		766454672357ABF9009E1A28 /* CustomViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		7664546E2357AE89009E1A28 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		766454702357AED5009E1A28 /* LandingTopPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTopPanelView.swift; sourceTree = "<group>"; };
 		766454762357B438009E1A28 /* SelectedPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		766454792357B735009E1A28 /* UIViewController+setNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+setNavigation.swift"; sourceTree = "<group>"; };
 		7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBottomPanelView.swift; sourceTree = "<group>"; };
-		7664547D2357B7EA009E1A28 /* LandingBottomPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBottomPanelView.xib; sourceTree = "<group>"; };
 		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */,
-				7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */,
 			);
 			path = Reusables;
 			sourceTree = "<group>";
@@ -78,6 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				7637CEC12358EB0400FB6979 /* addphoto.gif */,
+				7637CED2235908A000FB6979 /* addButton.jpg */,
+				7637CED4235908A000FB6979 /* addButton@2x.jpg */,
+				7637CED3235908A000FB6979 /* addButton@3x.jpg */,
+				7637CEE42359131E00FB6979 /* firad.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -90,6 +103,15 @@
 				7637CEC42358FFD700FB6979 /* Hotshot-Bridging-Header.h */,
 			);
 			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+		7637CED8235910D800FB6979 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */,
+				7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		766454402357A301009E1A28 = {
@@ -138,6 +160,7 @@
 		766454612357A71F009E1A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7637CED8235910D800FB6979 /* CollectionViewCells */,
 				7637CEBB2358EA3900FB6979 /* Reusables */,
 				766454672357ABF9009E1A28 /* CustomViewBase.swift */,
 				766454662357ABCD009E1A28 /* LandingViews */,
@@ -148,10 +171,10 @@
 		766454662357ABCD009E1A28 /* LandingViews */ = {
 			isa = PBXGroup;
 			children = (
-				766454642357AB83009E1A28 /* LandingTopPanelView.xib */,
 				766454702357AED5009E1A28 /* LandingTopPanelView.swift */,
-				7664547D2357B7EA009E1A28 /* LandingBottomPanelView.xib */,
+				7637CECE2359075200FB6979 /* LandingTopPanelView.xib */,
 				7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */,
+				7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */,
 			);
 			path = LandingViews;
 			sourceTree = "<group>";
@@ -241,13 +264,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7637CECF2359075200FB6979 /* LandingTopPanelView.xib in Resources */,
 				766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */,
-				7664547E2357B7EA009E1A28 /* LandingBottomPanelView.xib in Resources */,
+				7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */,
+				7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */,
+				7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */,
+				7637CED5235908A000FB6979 /* addButton.jpg in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
-				7637CEBF2358EA8800FB6979 /* AnimatedAddButton.xib in Resources */,
-				766454652357AB83009E1A28 /* LandingTopPanelView.xib in Resources */,
+				7637CEE52359131F00FB6979 /* firad.jpg in Resources */,
 				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
+				7637CED6235908A000FB6979 /* addButton@3x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +293,7 @@
 				7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */,
 				7637CEBD2358EA7800FB6979 /* AnimatedAddButton.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,
+				7637CEDB2359110D00FB6979 /* SelectedPhotosCell.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
 				7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -415,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64LWD834U3;
 				INFOPLIST_FILE = Hotshot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64LWD834U3;
 				INFOPLIST_FILE = Hotshot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (

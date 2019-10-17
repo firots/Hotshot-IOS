@@ -18,21 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9O-t0-UJE" customClass="LandingTopPanelView" customModule="Hotshot" customModuleProvider="target">
-                                <rect key="frame" x="16" y="188" width="382" height="100"/>
+                                <rect key="frame" x="16" y="88" width="382" height="100"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FYM-Lm-KIU"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-I8-4I4" customClass="LandingBottomPanelView" customModule="Hotshot" customModuleProvider="target">
-                                <rect key="frame" x="16" y="662" width="382" height="200"/>
+                                <rect key="frame" x="0.0" y="712" width="414" height="150"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="EJB-kV-9Hi"/>
+                                    <constraint firstAttribute="height" constant="150" id="EJB-kV-9Hi"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-oP-4Cu">
-                                <rect key="frame" x="16" y="304" width="382" height="342"/>
+                                <rect key="frame" x="16" y="204" width="382" height="492"/>
                                 <connections>
                                     <segue destination="Y4I-45-GJq" kind="embed" id="zAz-K4-T4X"/>
                                 </connections>
@@ -43,11 +43,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DAC-oP-4Cu" secondAttribute="trailing" constant="16" id="4X2-8g-wpo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L9O-t0-UJE" secondAttribute="trailing" constant="16" id="D5B-nx-5ib"/>
                             <constraint firstItem="DAC-oP-4Cu" firstAttribute="top" secondItem="L9O-t0-UJE" secondAttribute="bottom" constant="16" id="EcE-5N-n1z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Tc-I8-4I4" secondAttribute="trailing" constant="16" id="IhN-am-xmH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Tc-I8-4I4" secondAttribute="trailing" id="IhN-am-xmH"/>
                             <constraint firstItem="8Tc-I8-4I4" firstAttribute="top" secondItem="DAC-oP-4Cu" secondAttribute="bottom" constant="16" id="MDG-4v-6L6"/>
                             <constraint firstItem="L9O-t0-UJE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RjP-zt-gqw"/>
-                            <constraint firstItem="L9O-t0-UJE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Rmk-tK-Rp9"/>
-                            <constraint firstItem="8Tc-I8-4I4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WYE-7k-Egh"/>
+                            <constraint firstItem="L9O-t0-UJE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rmk-tK-Rp9"/>
+                            <constraint firstItem="8Tc-I8-4I4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYE-7k-Egh"/>
                             <constraint firstItem="DAC-oP-4Cu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uTt-K5-8wh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Tc-I8-4I4" secondAttribute="bottom" id="w8K-Pa-aQ1"/>
                         </constraints>
@@ -86,7 +86,7 @@
             <objects>
                 <collectionViewController id="Y4I-45-GJq" customClass="SelectedPhotosCollectionViewController" customModule="Hotshot" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ic2-fs-Ae8">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="342"/>
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="492"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1J0-WX-9Uj">

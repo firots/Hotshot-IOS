@@ -16,10 +16,8 @@ class CustomViewBase: UIView {
     }
     
     private func commonInit() {
-        guard let contentView = self.fromNib()
-            else { fatalError("View could not load from nib") }
+        guard let contentView = self.fromNib() else { fatalError("View could not load from nib") }
         addSubview(contentView)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

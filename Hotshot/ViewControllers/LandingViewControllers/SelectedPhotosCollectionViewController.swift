@@ -9,7 +9,7 @@
 import UIKit
 
 class SelectedPhotosCollectionViewController: UICollectionViewController,
-    HasCollectionViewDataSource, AnimatedAddButtonDelegate {
+    HasCollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var emptyView: UIView?
     var collectionViewDataSource: CollectionViewDataSource!
@@ -22,7 +22,8 @@ class SelectedPhotosCollectionViewController: UICollectionViewController,
     }
     
     func registerCells() {
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "SelectedPhotoCell")
+        let selectedPhotosCell = UINib(nibName: "SelectedPhotosCell", bundle: nil)
+        self.collectionView.register(selectedPhotosCell, forCellWithReuseIdentifier: "SelectedPhotosCell")
     }
     
     func setDZN() {
@@ -30,8 +31,8 @@ class SelectedPhotosCollectionViewController: UICollectionViewController,
         collectionView.emptyDataSetDelegate = self
     }
     
-    func animatedAddButtonTapped() {
-        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 75 , height: 75)
     }
 }
 

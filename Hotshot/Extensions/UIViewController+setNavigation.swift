@@ -10,7 +10,9 @@ import UIKit
 
 extension UIViewController {
     func setNavigation() {
-        navigationController?.navigationBar.barTintColor = view.backgroundColor
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
