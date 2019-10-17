@@ -24,7 +24,7 @@
                         <constraint firstAttribute="width" constant="32" id="nKm-5O-QhW"/>
                         <constraint firstAttribute="height" constant="32" id="yOK-hU-Ffd"/>
                     </constraints>
-                    <state key="normal" title="Button" image="addButton.jpg"/>
+                    <state key="normal" title="Button" image="addbutton.png"/>
                     <connections>
                         <action selector="addTapped:" destination="-1" eventType="touchUpInside" id="p0V-RN-XJ9"/>
                     </connections>
@@ -43,6 +43,6 @@
         </view>
     </objects>
     <resources>
-        <image name="addButton.jpg" width="32.5" height="32.5"/>
+        <image name="addbutton.png" width="32.5" height="32.5"/>
     </resources>
 </document>

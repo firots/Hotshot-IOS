@@ -12,15 +12,15 @@
 		7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEC52358FFD800FB6979 /* UIScrollView+EmptyDataSet.m */; };
 		7637CECF2359075200FB6979 /* LandingTopPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CECE2359075200FB6979 /* LandingTopPanelView.xib */; };
 		7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */; };
-		7637CED5235908A000FB6979 /* addButton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED2235908A000FB6979 /* addButton.jpg */; };
-		7637CED6235908A000FB6979 /* addButton@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED3235908A000FB6979 /* addButton@3x.jpg */; };
-		7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED4235908A000FB6979 /* addButton@2x.jpg */; };
 		7637CEDB2359110D00FB6979 /* SelectedPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */; };
 		7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */; };
 		7637CEE723591A6800FB6979 /* firad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEE623591A6800FB6979 /* firad.jpg */; };
 		7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */; };
 		7637CEED23591D7200FB6979 /* CollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */; };
 		7637CEEF23591E2500FB6979 /* SelectedPhotoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */; };
+		7637CEF32359250200FB6979 /* addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEF02359250100FB6979 /* addbutton.png */; };
+		7637CEF42359250200FB6979 /* addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEF12359250100FB6979 /* addbutton@2x.png */; };
+		7637CEF52359250200FB6979 /* addbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEF22359250100FB6979 /* addbutton@3x.png */; };
 		7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664544C2357A301009E1A28 /* AppDelegate.swift */; };
 		766454542357A301009E1A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766454522357A301009E1A28 /* Main.storyboard */; };
 		766454562357A302009E1A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766454552357A302009E1A28 /* Assets.xcassets */; };
@@ -44,15 +44,15 @@
 		7637CEC62358FFD800FB6979 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		7637CECE2359075200FB6979 /* LandingTopPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingTopPanelView.xib; sourceTree = "<group>"; };
 		7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBottomPanelView.xib; sourceTree = "<group>"; };
-		7637CED2235908A000FB6979 /* addButton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = addButton.jpg; sourceTree = "<group>"; };
-		7637CED3235908A000FB6979 /* addButton@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addButton@3x.jpg"; sourceTree = "<group>"; };
-		7637CED4235908A000FB6979 /* addButton@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addButton@2x.jpg"; sourceTree = "<group>"; };
 		7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosCell.swift; sourceTree = "<group>"; };
 		7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPhotosCell.xib; sourceTree = "<group>"; };
 		7637CEE623591A6800FB6979 /* firad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firad.jpg; sourceTree = "<group>"; };
 		7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellModel.swift; sourceTree = "<group>"; };
 		7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoCellModel.swift; sourceTree = "<group>"; };
+		7637CEF02359250100FB6979 /* addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addbutton.png; sourceTree = "<group>"; };
+		7637CEF12359250100FB6979 /* addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addbutton@2x.png"; sourceTree = "<group>"; };
+		7637CEF22359250100FB6979 /* addbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addbutton@3x.png"; sourceTree = "<group>"; };
 		766454492357A301009E1A28 /* Hotshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7664544C2357A301009E1A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		766454532357A301009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,10 +92,10 @@
 		7637CEC02358EAF600FB6979 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7637CEF02359250100FB6979 /* addbutton.png */,
+				7637CEF12359250100FB6979 /* addbutton@2x.png */,
+				7637CEF22359250100FB6979 /* addbutton@3x.png */,
 				7637CEC12358EB0400FB6979 /* addphoto.gif */,
-				7637CED2235908A000FB6979 /* addButton.jpg */,
-				7637CED4235908A000FB6979 /* addButton@2x.jpg */,
-				7637CED3235908A000FB6979 /* addButton@3x.jpg */,
 				7637CEE623591A6800FB6979 /* firad.jpg */,
 			);
 			path = Images;
@@ -157,19 +157,19 @@
 		7664544B2357A301009E1A28 /* Hotshot */ = {
 			isa = PBXGroup;
 			children = (
-				7637CEE823591CDB00FB6979 /* ViewModels */,
-				7637CEC32358FFB500FB6979 /* DZNEmptyDataSet */,
-				7637CEC02358EAF600FB6979 /* Images */,
-				766454A62357CB5C009E1A28 /* DataSources */,
-				766454782357B70D009E1A28 /* Extensions */,
-				766454612357A71F009E1A28 /* Views */,
-				766454602357A70B009E1A28 /* ViewControllers */,
+				7664545A2357A302009E1A28 /* Info.plist */,
+				766454522357A301009E1A28 /* Main.storyboard */,
+				766454572357A302009E1A28 /* LaunchScreen.storyboard */,
 				7664544C2357A301009E1A28 /* AppDelegate.swift */,
 				766454622357A93A009E1A28 /* SceneDelegate.swift */,
-				766454522357A301009E1A28 /* Main.storyboard */,
 				766454552357A302009E1A28 /* Assets.xcassets */,
-				766454572357A302009E1A28 /* LaunchScreen.storyboard */,
-				7664545A2357A302009E1A28 /* Info.plist */,
+				766454A62357CB5C009E1A28 /* DataSources */,
+				7637CEC32358FFB500FB6979 /* DZNEmptyDataSet */,
+				766454782357B70D009E1A28 /* Extensions */,
+				7637CEC02358EAF600FB6979 /* Images */,
+				766454602357A70B009E1A28 /* ViewControllers */,
+				7637CEE823591CDB00FB6979 /* ViewModels */,
+				766454612357A71F009E1A28 /* Views */,
 			);
 			path = Hotshot;
 			sourceTree = "<group>";
@@ -291,15 +291,15 @@
 			files = (
 				7637CECF2359075200FB6979 /* LandingTopPanelView.xib in Resources */,
 				766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */,
-				7637CED7235908A000FB6979 /* addButton@2x.jpg in Resources */,
+				7637CEF32359250200FB6979 /* addbutton.png in Resources */,
+				7637CEF52359250200FB6979 /* addbutton@3x.png in Resources */,
 				7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */,
+				7637CEF42359250200FB6979 /* addbutton@2x.png in Resources */,
 				7637CEE723591A6800FB6979 /* firad.jpg in Resources */,
 				7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */,
-				7637CED5235908A000FB6979 /* addButton.jpg in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
 				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
-				7637CED6235908A000FB6979 /* addButton@3x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

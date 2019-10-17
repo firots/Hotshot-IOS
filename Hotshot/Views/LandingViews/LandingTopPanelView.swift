@@ -15,6 +15,11 @@ final class LandingTopPanelView: CustomViewBase {
     
     override func awakeFromNib() {
         self.view.frame.size = self.frame.size
+        let tintedImage = addButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
+        addButton.setImage(tintedImage, for: .normal)
+        if #available(iOS 13.0, *) {
+            addButton.tintColor = .label
+        }
     }
     
     func setAnchors() {
