@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7637CEBD2358EA7800FB6979 /* AnimatedAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */; };
+		7637CEBF2358EA8800FB6979 /* AnimatedAddButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */; };
+		7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEC12358EB0400FB6979 /* addphoto.gif */; };
 		7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664544C2357A301009E1A28 /* AppDelegate.swift */; };
 		766454542357A301009E1A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766454522357A301009E1A28 /* Main.storyboard */; };
 		766454562357A302009E1A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766454552357A302009E1A28 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedAddButton.swift; sourceTree = "<group>"; };
+		7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimatedAddButton.xib; sourceTree = "<group>"; };
+		7637CEC12358EB0400FB6979 /* addphoto.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addphoto.gif; sourceTree = "<group>"; };
 		766454492357A301009E1A28 /* Hotshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7664544C2357A301009E1A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		766454532357A301009E1A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7637CEBB2358EA3900FB6979 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				7637CEBC2358EA7800FB6979 /* AnimatedAddButton.swift */,
+				7637CEBE2358EA8800FB6979 /* AnimatedAddButton.xib */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		7637CEC02358EAF600FB6979 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7637CEC12358EB0400FB6979 /* addphoto.gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		766454402357A301009E1A28 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +97,7 @@
 		7664544B2357A301009E1A28 /* Hotshot */ = {
 			isa = PBXGroup;
 			children = (
+				7637CEC02358EAF600FB6979 /* Images */,
 				766454A62357CB5C009E1A28 /* DataSources */,
 				766454782357B70D009E1A28 /* Extensions */,
 				766454612357A71F009E1A28 /* Views */,
@@ -99,6 +123,7 @@
 		766454612357A71F009E1A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7637CEBB2358EA3900FB6979 /* Reusables */,
 				766454672357ABF9009E1A28 /* CustomViewBase.swift */,
 				766454662357ABCD009E1A28 /* LandingViews */,
 			);
@@ -204,7 +229,9 @@
 				7664547E2357B7EA009E1A28 /* LandingBottomPanelView.xib in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
+				7637CEBF2358EA8800FB6979 /* AnimatedAddButton.xib in Resources */,
 				766454652357AB83009E1A28 /* LandingTopPanelView.xib in Resources */,
+				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +248,7 @@
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
 				7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */,
+				7637CEBD2358EA7800FB6979 /* AnimatedAddButton.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
