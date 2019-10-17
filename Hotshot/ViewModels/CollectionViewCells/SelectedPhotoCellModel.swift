@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectedPhotoCellModel: CollectionViewCellModel {
+final class SelectedPhotoCellModel: CollectionViewCellModel {
     var style = CollectionViewCellModelTypes.selectedPhoto
     var nameTag: String
     var selectAction: (() -> Void)?

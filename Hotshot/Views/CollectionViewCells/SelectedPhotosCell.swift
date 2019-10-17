@@ -8,13 +8,11 @@
 
 import UIKit
 
-class SelectedPhotosCell: UICollectionViewCell {
+final class SelectedPhotosCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         imageView.layer.cornerRadius = 15
-        // Initialization code
     }
-
 }

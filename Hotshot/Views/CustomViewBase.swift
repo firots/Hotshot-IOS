@@ -26,7 +26,6 @@ class CustomViewBase: UIView {
     }
 }
 
-
 extension UIView {
     @discardableResult
     func fromNib<T : UIView>() -> T? {

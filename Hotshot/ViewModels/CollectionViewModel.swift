@@ -13,8 +13,7 @@ protocol CollectionViewModel {
     var sections: [CollectionViewSectionModel] { get  set }
 }
 
-class CollectionViewSectionModel {
+final class CollectionViewSectionModel {
     var title: String?
     var footer: String?
-    
 }
