@@ -23,11 +23,15 @@ final class SelectedPhotosDataSource: NSObject, CollectionViewDataSource {
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        model.sections.count
+        1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model.sections[section].items.count
+        if model.sections.count == 0 {
+            return 0
+        } else {
+            return model.sections[section].items.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
