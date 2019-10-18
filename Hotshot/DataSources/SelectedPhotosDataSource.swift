@@ -32,7 +32,7 @@ final class SelectedPhotosDataSource: NSObject, CollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedPhotosCell", for: indexPath) as! SelectedPhotosCell
-        cell.imageView.image = UIImage(named: "firad.jpg")
+        cell.model = model.sections[0].items[indexPath.row] as? SelectedPhotoCellModel
         return cell
     }
 }

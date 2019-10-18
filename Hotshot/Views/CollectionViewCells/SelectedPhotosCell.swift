@@ -11,6 +11,13 @@ import UIKit
 final class SelectedPhotosCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
+    var model: SelectedPhotoCellModel? {
+        didSet {
+            if model != nil {
+                imageView.image = model?.image
+            }
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         imageView.layer.cornerRadius = 15
