@@ -142,6 +142,7 @@
 			children = (
 				7637CEE923591CF400FB6979 /* CollectionViewCells */,
 				7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */,
+				76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -151,7 +152,6 @@
 			children = (
 				7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */,
 				7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */,
-				76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
