@@ -15,6 +15,7 @@ final class LandingViewController: UIViewController {
     @IBOutlet weak var landingTopPanelView: LandingTopPanelView!
     @IBOutlet weak var landingBottomPanelView: LandingBottomPanelView!
     @IBOutlet weak var selectedPhotosContainer: UIView!
+    private let maxSelections = 4
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,21 @@ extension LandingViewController: LandingBottomPanelViewDelegate {
 
 extension LandingViewController: LandingTopPanelViewDelegate {
     func addTapped() {
+        if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
+            if !model.sections.isEmpty {
+                if model.sections[0].items.count >= 4 {
+                    return
+                }
+            }
+        }
+        
         let viewController = TLPhotosPickerViewController()
         viewController.delegate = self
+        var configure = TLPhotosPickerConfigure()
+        configure.allowedLivePhotos = false
+        configure.autoPlay = false
+        configure.maxSelectedAssets = maxSelections
+        viewController.configure = configure
         present(viewController, animated: true, completion: nil)
     }
     
@@ -48,6 +62,10 @@ extension LandingViewController: LandingTopPanelViewDelegate {
             if model.sections.isEmpty {
                 let section = CollectionViewSectionModel()
                 model.sections.append(section)
+            } else {
+                if model.sections[0].items.count >= 4 {
+                    return
+                }
             }
             model.sections[0].items.append(selectedPhotoCell)
             selectedPhotosVC.collectionView.insertItems(at: [IndexPath(row: model.sections[0].items.count - 1, section: 0)])
