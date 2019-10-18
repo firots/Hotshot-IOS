@@ -37,26 +37,32 @@ extension LandingViewController: LandingBottomPanelViewDelegate {
 
 extension LandingViewController: LandingTopPanelViewDelegate {
     func addTapped() {
+        if isMaxPhotosReached() == true { return }
+        loadPhotoPicker()
+    }
+    
+    func isMaxPhotosReached() -> Bool {
         if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
             if !model.sections.isEmpty {
                 if model.sections[0].items.count >= 4 {
-                    return
+                    return true
                 }
             }
         }
-        
+        return false
+    }
+    
+    func loadPhotoPicker() {
         let viewController = TLPhotosPickerViewController()
         viewController.delegate = self
         var configure = TLPhotosPickerConfigure()
-        configure.allowedVideo = false
-        configure.allowedVideoRecording = false
-        configure.allowedAlbumCloudShared = false
-        configure.autoPlay = false
-        configure.maxSelectedAssets = maxSelections
+        configure.photoPicker(maxItems: maxSelections)
         viewController.configure = configure
         present(viewController, animated: true, completion: nil)
     }
-    
+}
+
+extension LandingViewController: TLPhotosPickerViewControllerDelegate {
     func addPhoto(tag: String, image: UIImage) {
         if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
             let selectedPhotoCell = SelectedPhotoCellModel(tag: tag)
@@ -74,9 +80,7 @@ extension LandingViewController: LandingTopPanelViewDelegate {
             selectedPhotosVC.collectionView.reloadEmptyDataSet()
         }
     }
-}
-
-extension LandingViewController: TLPhotosPickerViewControllerDelegate {
+    
     func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {
         for item in withTLPHAssets {
             if let image = item.fullResolutionImage {

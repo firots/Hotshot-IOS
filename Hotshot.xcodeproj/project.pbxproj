@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */; };
 		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
 		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
+		7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */; };
 		76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */; };
 		87D02F1EA2A764AF5B31BB53 /* Pods_Hotshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBC4EB5C0DAA490B1AF421E /* Pods_Hotshot.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBottomPanelView.swift; sourceTree = "<group>"; };
 		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
+		7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TLPhotosPickerConfigure+PhotoPicker.swift"; sourceTree = "<group>"; };
 		76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,6 +238,7 @@
 			children = (
 				766454792357B735009E1A28 /* UIViewController+setNavigation.swift */,
 				766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */,
+				7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -254,7 +257,6 @@
 				1E1580E7F39AA70FD4230568 /* Pods-Hotshot.debug.xcconfig */,
 				6BA70F2C327E64C82116882F /* Pods-Hotshot.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -398,6 +400,7 @@
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
 				7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */,
+				7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */,
 				766454712357AED5009E1A28 /* LandingTopPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
