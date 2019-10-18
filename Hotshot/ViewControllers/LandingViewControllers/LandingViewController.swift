@@ -48,7 +48,9 @@ extension LandingViewController: LandingTopPanelViewDelegate {
         let viewController = TLPhotosPickerViewController()
         viewController.delegate = self
         var configure = TLPhotosPickerConfigure()
-        configure.allowedLivePhotos = false
+        configure.allowedVideo = false
+        configure.allowedVideoRecording = false
+        configure.allowedAlbumCloudShared = false
         configure.autoPlay = false
         configure.maxSelectedAssets = maxSelections
         viewController.configure = configure
