@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import TLPhotoPicker
+import PhotosUI
 
 final class LandingViewController: UIViewController {
 
     @IBOutlet weak var landingTopPanelView: LandingTopPanelView!
     @IBOutlet weak var landingBottomPanelView: LandingBottomPanelView!
     @IBOutlet weak var selectedPhotosContainer: UIView!
+    var selectedAssets = [TLPHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,7 @@ extension LandingViewController: LandingBottomPanelViewDelegate {
 
 extension LandingViewController: LandingTopPanelViewDelegate {
     func addTapped() {
-        if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
+        /*if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
             let selectedPhotoCell = SelectedPhotoCellModel(tag: "")
             selectedPhotoCell.image = UIImage(named: "firad.jpg")
             if model.sections.isEmpty {
@@ -45,6 +48,40 @@ extension LandingViewController: LandingTopPanelViewDelegate {
             selectedPhotosVC.collectionView.insertItems(at: [IndexPath(row: model.sections[0].items.count - 1, section: 0)])
             selectedPhotosVC.collectionView.endEditing(false)
             selectedPhotosVC.dataChanged()
-        }
+        }*/
+        
+        let viewController = TLPhotosPickerViewController()
+        viewController.delegate = self
+        present(viewController, animated: true, completion: nil)
+    }
+}
+
+extension LandingViewController: TLPhotosPickerViewControllerDelegate {
+    func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {
+        // use selected order, fullresolution image
+        self.selectedAssets = withTLPHAssets
+    }
+    func dismissPhotoPicker(withPHAssets: [PHAsset]) {
+        // if you want to used phasset.
+    }
+    func photoPickerDidCancel() {
+        // cancel
+    }
+    func dismissComplete() {
+        // picker viewcontroller dismiss completion
+    }
+    func canSelectAsset(phAsset: PHAsset) -> Bool {
+        //Custom Rules & Display
+        //You can decide in which case the selection of the cell could be forbidden.
+        true
+    }
+    func didExceedMaximumNumberOfSelection(picker: TLPhotosPickerViewController) {
+        // exceed max selection
+    }
+    func handleNoAlbumPermissions(picker: TLPhotosPickerViewController) {
+        // handle denied albums permissions case
+    }
+    func handleNoCameraPermissions(picker: TLPhotosPickerViewController) {
+        // handle denied camera permissions case
     }
 }
