@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectedPhotosCollectionViewController: UICollectionViewController,
+final class SelectedPhotosCollectionViewController: UICollectionViewController,
     HasCollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var emptyView: UIView?
