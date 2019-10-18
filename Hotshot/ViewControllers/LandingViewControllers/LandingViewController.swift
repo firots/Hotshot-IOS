@@ -15,7 +15,6 @@ final class LandingViewController: UIViewController {
     @IBOutlet weak var landingTopPanelView: LandingTopPanelView!
     @IBOutlet weak var landingBottomPanelView: LandingBottomPanelView!
     @IBOutlet weak var selectedPhotosContainer: UIView!
-    var selectedAssets = [TLPHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +36,15 @@ extension LandingViewController: LandingBottomPanelViewDelegate {
 
 extension LandingViewController: LandingTopPanelViewDelegate {
     func addTapped() {
-        /*if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
-            let selectedPhotoCell = SelectedPhotoCellModel(tag: "")
-            selectedPhotoCell.image = UIImage(named: "firad.jpg")
+        let viewController = TLPhotosPickerViewController()
+        viewController.delegate = self
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    func addPhoto(tag: String, image: UIImage) {
+        if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
+            let selectedPhotoCell = SelectedPhotoCellModel(tag: tag)
+            selectedPhotoCell.image = image
             if model.sections.isEmpty {
                 let section = CollectionViewSectionModel()
                 model.sections.append(section)
@@ -48,18 +53,17 @@ extension LandingViewController: LandingTopPanelViewDelegate {
             selectedPhotosVC.collectionView.insertItems(at: [IndexPath(row: model.sections[0].items.count - 1, section: 0)])
             selectedPhotosVC.collectionView.endEditing(false)
             selectedPhotosVC.dataChanged()
-        }*/
-        
-        let viewController = TLPhotosPickerViewController()
-        viewController.delegate = self
-        present(viewController, animated: true, completion: nil)
+        }
     }
 }
 
 extension LandingViewController: TLPhotosPickerViewControllerDelegate {
     func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {
-        // use selected order, fullresolution image
-        self.selectedAssets = withTLPHAssets
+        for item in withTLPHAssets {
+            if let image = item.fullResolutionImage {
+                addPhoto(tag: item.originalFileName ?? "NaN", image: image)
+            }
+        }
     }
     func dismissPhotoPicker(withPHAssets: [PHAsset]) {
         // if you want to used phasset.
