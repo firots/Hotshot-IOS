@@ -27,7 +27,6 @@ final class LandingViewController: UIViewController {
         landingTopPanelView.delegate = self
         landingBottomPanelView.delegate = self
     }
-    
 }
 
 extension LandingViewController: LandingBottomPanelViewDelegate {

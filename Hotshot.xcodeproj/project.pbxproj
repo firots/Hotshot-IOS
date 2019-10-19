@@ -14,7 +14,6 @@
 		7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */; };
 		7637CEDB2359110D00FB6979 /* SelectedPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */; };
 		7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */; };
-		7637CEE723591A6800FB6979 /* firad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEE623591A6800FB6979 /* firad.jpg */; };
 		7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */; };
 		7637CEED23591D7200FB6979 /* CollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */; };
 		7637CEEF23591E2500FB6979 /* SelectedPhotoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */; };
@@ -35,6 +34,12 @@
 		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
 		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
 		7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */; };
+		76C277AB235B8FB000C1F8DD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277A8235B8FB000C1F8DD /* logo.png */; };
+		76C277AC235B8FB000C1F8DD /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277A9235B8FB000C1F8DD /* logo@2x.png */; };
+		76C277AD235B8FB000C1F8DD /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AA235B8FB000C1F8DD /* logo@3x.png */; };
+		76C277B1235B945200C1F8DD /* hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AE235B945200C1F8DD /* hamburger@2x.png */; };
+		76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AF235B945200C1F8DD /* hamburger@3x.png */; };
+		76C277B3235B945200C1F8DD /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277B0235B945200C1F8DD /* hamburger.png */; };
 		76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */; };
 		87D02F1EA2A764AF5B31BB53 /* Pods_Hotshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBC4EB5C0DAA490B1AF421E /* Pods_Hotshot.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +57,6 @@
 		7637CED02359078F00FB6979 /* LandingBottomPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingBottomPanelView.xib; sourceTree = "<group>"; };
 		7637CED92359110D00FB6979 /* SelectedPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosCell.swift; sourceTree = "<group>"; };
 		7637CEDA2359110D00FB6979 /* SelectedPhotosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPhotosCell.xib; sourceTree = "<group>"; };
-		7637CEE623591A6800FB6979 /* firad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = firad.jpg; sourceTree = "<group>"; };
 		7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		7637CEEC23591D7200FB6979 /* CollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellModel.swift; sourceTree = "<group>"; };
 		7637CEEE23591E2500FB6979 /* SelectedPhotoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoCellModel.swift; sourceTree = "<group>"; };
@@ -75,6 +79,12 @@
 		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
 		7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TLPhotosPickerConfigure+PhotoPicker.swift"; sourceTree = "<group>"; };
+		76C277A8235B8FB000C1F8DD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		76C277A9235B8FB000C1F8DD /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		76C277AA235B8FB000C1F8DD /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		76C277AE235B945200C1F8DD /* hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@2x.png"; sourceTree = "<group>"; };
+		76C277AF235B945200C1F8DD /* hamburger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@3x.png"; sourceTree = "<group>"; };
+		76C277B0235B945200C1F8DD /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
 		76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +119,16 @@
 		7637CEC02358EAF600FB6979 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				76C277B0235B945200C1F8DD /* hamburger.png */,
+				76C277AE235B945200C1F8DD /* hamburger@2x.png */,
+				76C277AF235B945200C1F8DD /* hamburger@3x.png */,
 				7637CEF02359250100FB6979 /* addbutton.png */,
 				7637CEF12359250100FB6979 /* addbutton@2x.png */,
+				76C277A8235B8FB000C1F8DD /* logo.png */,
+				76C277A9235B8FB000C1F8DD /* logo@2x.png */,
+				76C277AA235B8FB000C1F8DD /* logo@3x.png */,
 				7637CEF22359250100FB6979 /* addbutton@3x.png */,
 				7637CEC12358EB0400FB6979 /* addphoto.gif */,
-				7637CEE623591A6800FB6979 /* firad.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -321,16 +336,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C277B1235B945200C1F8DD /* hamburger@2x.png in Resources */,
 				7637CECF2359075200FB6979 /* LandingTopPanelView.xib in Resources */,
+				76C277AC235B8FB000C1F8DD /* logo@2x.png in Resources */,
 				766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */,
 				7637CEF32359250200FB6979 /* addbutton.png in Resources */,
 				7637CEF52359250200FB6979 /* addbutton@3x.png in Resources */,
+				76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */,
 				7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */,
 				7637CEF42359250200FB6979 /* addbutton@2x.png in Resources */,
-				7637CEE723591A6800FB6979 /* firad.jpg in Resources */,
 				7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */,
+				76C277AB235B8FB000C1F8DD /* logo.png in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
+				76C277B3235B945200C1F8DD /* hamburger.png in Resources */,
+				76C277AD235B8FB000C1F8DD /* logo@3x.png in Resources */,
 				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
