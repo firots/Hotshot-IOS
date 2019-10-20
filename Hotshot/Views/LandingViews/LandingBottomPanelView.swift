@@ -10,10 +10,14 @@ import UIKit
 
 final class LandingBottomPanelView: CustomViewBase {
     weak var delegate: LandingBottomPanelViewDelegate?
+    @IBOutlet weak var startButton: UIButton!
     @IBOutlet var view: UIView!
     
     override func awakeFromNib() {
         self.view.frame.size = self.frame.size
+    }
+    @IBAction func startTapped(_ sender: Any) {
+        delegate?.startTapped()
     }
 }
 

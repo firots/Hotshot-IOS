@@ -27,11 +27,25 @@ final class LandingViewController: UIViewController {
         landingTopPanelView.delegate = self
         landingBottomPanelView.delegate = self
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let analyzingVC = segue.destination as? AnalyzingViewController {
+            guard let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel else { return }
+            for section in model.sections {
+                for item in section.items {
+                    if let selectedPhoto = item as? SelectedPhotoCellModel, let image = selectedPhoto.image {
+                        let analyzedImage = AnalyzingImage(fileName: selectedPhoto.nameTag, image: image )
+                        analyzingVC.images.append(analyzedImage)
+                    }
+                }
+            }
+        }
+    }
 }
 
 extension LandingViewController: LandingBottomPanelViewDelegate {
     func startTapped() {
-         
+        performSegue(withIdentifier: "AnalyzeSegue", sender: self)
     }
 }
 

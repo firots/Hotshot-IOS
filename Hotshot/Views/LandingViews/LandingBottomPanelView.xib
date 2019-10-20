@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingBottomPanelView" customModule="Hotshot" customModuleProvider="target">
             <connections>
+                <outlet property="startButton" destination="Eah-Gw-YOu" id="PyC-Ic-FiO"/>
                 <outlet property="view" destination="iN0-l3-epB" id="34i-eW-TEE"/>
             </connections>
         </placeholder>
@@ -16,7 +17,22 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eah-Gw-YOu">
+                    <rect key="frame" x="364" y="60" width="34" height="30"/>
+                    <state key="normal" title="Start">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="startTapped:" destination="-1" eventType="touchUpInside" id="JxF-GM-52D"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eah-Gw-YOu" secondAttribute="trailing" constant="16" id="CdN-un-WPX"/>
+                <constraint firstItem="Eah-Gw-YOu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WF6-8s-qOM"/>
+            </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
