@@ -25,12 +25,20 @@ class AnalyzingViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        timer?.invalidate()
+    }
+    
     func addPhotoView() -> PhotoView {
         let photoView = PhotoView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - PhotoView.height / 2, width: PhotoView.width, height: PhotoView.height))
         photoView.analyzingPhoto(image: images[currentPhotoId].image)
         if currentPhotoId + 1 >= images.count { currentPhotoId = 0} else { currentPhotoId += 1}
         self.view.addSubview(photoView)
         return photoView
+    }
+    
+    deinit {
+        print("by")
     }
     
     @objc func getPhoto() {
