@@ -10,55 +10,68 @@ import UIKit
 
 class AnalyzingViewController: UIViewController {
     var images = [AnalyzingImage]()
-    static let photoHeight: CGFloat = 330
-    static let photoWidth: CGFloat = 240
+    var currentPhotoId = 0
+    var timer: Timer?
+    
+    @IBOutlet weak var workingLabel: UILabel!
     override func viewDidLoad() {
+        workingLabel.text = "Working"
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getRandomImage()
+        getPhoto()
+        workingLabel.alphaGlow(duration: 1.2, alpha: 0.3)
         super.viewWillAppear(animated)
     }
     
-    func addImageView() -> UIImageView {
-        let imageView = UIImageView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - AnalyzingViewController.photoHeight / 2, width: AnalyzingViewController.photoWidth, height: AnalyzingViewController.photoHeight))
-        imageView.image = images.randomElement()!.image
-        imageView.rotate(angle: 50)
-        imageView.contentMode = .scaleAspectFit
-        self.view.addSubview(imageView)
-        return imageView
+    func addPhotoView() -> PhotoView {
+        let photoView = PhotoView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - PhotoView.height / 2, width: PhotoView.width, height: PhotoView.height))
+        
+        photoView.imageView.image = images[currentPhotoId].image
+        if currentPhotoId + 1 >= images.count { currentPhotoId = 0} else { currentPhotoId += 1}
+        photoView.imageView.clipsToBounds = true
+        photoView.imageView.contentMode = .scaleAspectFill
+        
+        photoView.layer.masksToBounds = false
+        photoView.layer.shadowRadius = 10
+        photoView.layer.shadowOpacity = 1
+        photoView.layer.shadowColor = UIColor.gray.cgColor
+        photoView.layer.shadowOffset = CGSize(width: 0 , height:10)
+        
+        photoView.rotate(angle: 50)
+
+        self.view.addSubview(photoView)
+        return photoView
     }
     
     
-    func getRandomImage() {
-        let imageView = addImageView()
+    @objc func getPhoto() {
+        let photoView = addPhotoView()
         
         let enterDuration = 0.5
         let fallDuration = 0.4
         let shakeDurations: [Double] = [Double.random(in: 0.3...0.5), Double.random(in: 0.3...0.5), Double.random(in: 0.3...0.5), Double.random(in: 0.3...0.5), Double.random(in: 0.3...0.5)]
         let shakeDuration = shakeDurations.reduce(0, +)
-        let totalDuration = enterDuration + shakeDuration + fallDuration
+        let totalDuration = enterDuration + shakeDuration
+        timer = Timer.scheduledTimer(timeInterval: totalDuration + fallDuration - 0.9, target: self, selector: #selector(getPhoto), userInfo: nil, repeats: false)
         
         let relativeEnterDuration = enterDuration / totalDuration
-        let relativeShakeDuration =  shakeDuration / totalDuration
-        let relativeFallDuration = fallDuration / totalDuration
-        
         var relativeShakeStartTime = relativeEnterDuration
 
         UIView.animateKeyframes(withDuration: totalDuration, delay: 0.0, options: [], animations: { //check for weaks
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: relativeEnterDuration) {
-                imageView.center = self.view.center
-                imageView.rotate(angle: -50)
+                photoView.center = self.view.center
+                photoView.rotate(angle: -50)
             }
-            let minR: CGFloat = -15
-            let maxR: CGFloat = 15
+            let minR: CGFloat = -9
+            let maxR: CGFloat = 9
             var rotateBy: CGFloat = CGFloat.random(in: minR...maxR)
 
             for i in 0...4 {
                 UIView.addKeyframe(withRelativeStartTime: relativeShakeStartTime, relativeDuration: shakeDurations[i] / totalDuration ) {
-                    imageView.rotate(angle: rotateBy)
-                    imageView.center =  CGPoint(x: self.view.center.x + CGFloat.random(in: -10...10), y: self.view.center.y + CGFloat.random(in: -10...10))
+                    photoView.rotate(angle: rotateBy)
+                    photoView.center =  CGPoint(x: self.view.center.x + CGFloat.random(in: -10...10), y: self.view.center.y + CGFloat.random(in: -10...10))
                 }
                 let rotateMin = minR - rotateBy
                 let rotateMax = maxR - rotateBy
@@ -66,13 +79,17 @@ class AnalyzingViewController: UIViewController {
                 relativeShakeStartTime += shakeDurations[i] / totalDuration
             }
 
-            UIView.addKeyframe(withRelativeStartTime: relativeEnterDuration + relativeShakeDuration, relativeDuration: relativeFallDuration) {
-                imageView.frame.origin.y += self.view.frame.height
-            }
-
         }) { (completed) in
-            imageView.removeFromSuperview()
-            self.getRandomImage()
+            self.fallPhoto(photo: photoView, duration: fallDuration)
+        }
+    }
+
+    func fallPhoto(photo: UIView, duration: Double) {
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
+            photo.rotate(angle: 80)
+            photo.center = CGPoint(x: photo.center.x, y: photo.center.y + self.view.frame.height)
+        }) { _ in
+            photo.removeFromSuperview()
         }
     }
 }

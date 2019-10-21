@@ -125,9 +125,26 @@
                     <view key="view" contentMode="scaleToFill" id="qR8-iC-gDo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="analyzing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mA-US-r3s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2mA-US-r3s" firstAttribute="top" secondItem="rVx-Sk-j0j" secondAttribute="top" constant="44" id="4DV-2f-qFW"/>
+                            <constraint firstItem="2mA-US-r3s" firstAttribute="centerX" secondItem="rVx-Sk-j0j" secondAttribute="centerX" id="HtQ-sw-PbQ"/>
+                            <constraint firstItem="2mA-US-r3s" firstAttribute="leading" secondItem="rVx-Sk-j0j" secondAttribute="leading" id="Oat-VQ-0f4"/>
+                            <constraint firstItem="rVx-Sk-j0j" firstAttribute="trailing" secondItem="2mA-US-r3s" secondAttribute="trailing" id="k1r-iR-4DP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rVx-Sk-j0j"/>
                     </view>
+                    <connections>
+                        <outlet property="workingLabel" destination="2mA-US-r3s" id="YOo-kL-Un0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7P-22-bDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

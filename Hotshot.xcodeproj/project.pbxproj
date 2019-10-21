@@ -36,6 +36,9 @@
 		7664547C2357B7D7009E1A28 /* LandingBottomPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */; };
 		766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */; };
 		766454A82357CB73009E1A28 /* SelectedPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */; };
+		7670F4A2235E1C690031AA55 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7670F4A1235E1C690031AA55 /* PhotoView.xib */; };
+		7670F4A4235E1CFD0031AA55 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670F4A3235E1CFD0031AA55 /* PhotoView.swift */; };
+		7670F4A6235E22CB0031AA55 /* UIView+AlphaGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */; };
 		7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */; };
 		76C277AB235B8FB000C1F8DD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277A8235B8FB000C1F8DD /* logo.png */; };
 		76C277AC235B8FB000C1F8DD /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277A9235B8FB000C1F8DD /* logo@2x.png */; };
@@ -84,6 +87,9 @@
 		7664547B2357B7D7009E1A28 /* LandingBottomPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingBottomPanelView.swift; sourceTree = "<group>"; };
 		766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		766454A72357CB73009E1A28 /* SelectedPhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosDataSource.swift; sourceTree = "<group>"; };
+		7670F4A1235E1C690031AA55 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		7670F4A3235E1CFD0031AA55 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AlphaGlow.swift"; sourceTree = "<group>"; };
 		7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TLPhotosPickerConfigure+PhotoPicker.swift"; sourceTree = "<group>"; };
 		76C277A8235B8FB000C1F8DD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		76C277A9235B8FB000C1F8DD /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
@@ -240,6 +246,8 @@
 				7637CEBB2358EA3900FB6979 /* Reusables */,
 				766454672357ABF9009E1A28 /* CustomViewBase.swift */,
 				766454662357ABCD009E1A28 /* LandingViews */,
+				7670F4A1235E1C690031AA55 /* PhotoView.xib */,
+				7670F4A3235E1CFD0031AA55 /* PhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 				766454A42357CA03009E1A28 /* HasCollectionViewDataSource.swift */,
 				7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */,
 				764A9567235CFCF20075A94D /* UIView+rotate.swift */,
+				7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +369,7 @@
 				7637CEF32359250200FB6979 /* addbutton.png in Resources */,
 				7637CEF52359250200FB6979 /* addbutton@3x.png in Resources */,
 				76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */,
+				7670F4A2235E1C690031AA55 /* PhotoView.xib in Resources */,
 				7637CEDC2359110D00FB6979 /* SelectedPhotosCell.xib in Resources */,
 				7637CEF42359250200FB6979 /* addbutton@2x.png in Resources */,
 				7637CED12359078F00FB6979 /* LandingBottomPanelView.xib in Resources */,
@@ -426,6 +436,8 @@
 				7664547A2357B735009E1A28 /* UIViewController+setNavigation.swift in Sources */,
 				7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */,
 				766454772357B438009E1A28 /* SelectedPhotosCollectionViewController.swift in Sources */,
+				7670F4A4235E1CFD0031AA55 /* PhotoView.swift in Sources */,
+				7670F4A6235E22CB0031AA55 /* UIView+AlphaGlow.swift in Sources */,
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
 				764A955A235CE2F00075A94D /* AnalyzingViewController.swift in Sources */,
