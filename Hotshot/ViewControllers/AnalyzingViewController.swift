@@ -27,24 +27,11 @@ class AnalyzingViewController: UIViewController {
     
     func addPhotoView() -> PhotoView {
         let photoView = PhotoView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - PhotoView.height / 2, width: PhotoView.width, height: PhotoView.height))
-        
-        photoView.imageView.image = images[currentPhotoId].image
+        photoView.analyzingPhoto(image: images[currentPhotoId].image)
         if currentPhotoId + 1 >= images.count { currentPhotoId = 0} else { currentPhotoId += 1}
-        photoView.imageView.clipsToBounds = true
-        photoView.imageView.contentMode = .scaleAspectFill
-        
-        photoView.layer.masksToBounds = false
-        photoView.layer.shadowRadius = 10
-        photoView.layer.shadowOpacity = 1
-        photoView.layer.shadowColor = UIColor.gray.cgColor
-        photoView.layer.shadowOffset = CGSize(width: 0 , height:10)
-        
-        photoView.rotate(angle: 50)
-
         self.view.addSubview(photoView)
         return photoView
     }
-    
     
     @objc func getPhoto() {
         let photoView = addPhotoView()
@@ -83,7 +70,7 @@ class AnalyzingViewController: UIViewController {
             self.fallPhoto(photo: photoView, duration: fallDuration)
         }
     }
-
+    
     func fallPhoto(photo: UIView, duration: Double) {
         UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
             photo.rotate(angle: 80)

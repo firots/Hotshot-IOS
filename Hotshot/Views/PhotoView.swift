@@ -21,4 +21,19 @@ class PhotoView: CustomViewBase {
     }
     */
 
+    private func addShadow() {
+        layer.masksToBounds = false
+        layer.shadowRadius = 10
+        layer.shadowOpacity = 1
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOffset = CGSize(width: 0 , height:10)
+    }
+    
+    func analyzingPhoto(image: UIImage) {
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = image
+        addShadow()
+        rotate(angle: 50)
+    }
 }
