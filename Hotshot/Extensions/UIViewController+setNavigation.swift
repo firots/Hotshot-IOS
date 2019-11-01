@@ -10,7 +10,8 @@ import UIKit
 
 extension UIViewController {
     func setNavigation() {
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        /*navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -18,7 +19,7 @@ extension UIViewController {
         
         addLogo()
         
-        addHamburgerButton()
+        addHamburgerButton()*/
     }
     
     func addLogo() {

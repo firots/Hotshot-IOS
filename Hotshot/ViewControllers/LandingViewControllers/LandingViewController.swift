@@ -11,58 +11,41 @@ import TLPhotoPicker
 import PhotosUI
 
 final class LandingViewController: UIViewController {
-
-    @IBOutlet weak var landingTopPanelView: LandingTopPanelView!
-    @IBOutlet weak var landingBottomPanelView: LandingBottomPanelView!
-    @IBOutlet weak var selectedPhotosContainer: UIView!
     private let maxSelections = 4
+    @IBOutlet weak var roundedPhotosView: RoundedPhotosView!
     
     override func viewDidLoad() {
+        roundedPhotosView.backgroundColor = .clear
         super.viewDidLoad()
         setNavigation()
         setDelegates()
     }
     
     func setDelegates() {
-        landingTopPanelView.delegate = self
-        landingBottomPanelView.delegate = self
+        roundedPhotosView.delegate = self
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let analyzingVC = segue.destination as? AnalyzingViewController {
-            guard let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel else { return }
-            for section in model.sections {
-                for item in section.items {
-                    if let selectedPhoto = item as? SelectedPhotoCellModel, let image = selectedPhoto.image {
-                        let analyzedImage = AnalyzingImage(fileName: selectedPhoto.nameTag, image: image )
-                        analyzingVC.images.append(analyzedImage)
-                    }
-                }
-            }
+            analyzingVC.images = roundedPhotosView.images()
         }
     }
 }
 
-extension LandingViewController: LandingBottomPanelViewDelegate {
+/*extension LandingViewController: LandingBottomPanelViewDelegate {
     func startTapped() {
         performSegue(withIdentifier: "AnalyzeSegue", sender: self)
     }
-}
+}*/
 
-extension LandingViewController: LandingTopPanelViewDelegate {
+extension LandingViewController: RoundedPhotosViewDelegate {
     func addTapped() {
+        print("a2")
         if isMaxPhotosReached() == true { return }
         loadPhotoPicker()
     }
     
     func isMaxPhotosReached() -> Bool {
-        if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
-            if !model.sections.isEmpty {
-                if model.sections[0].items.count >= 4 {
-                    return true
-                }
-            }
-        }
         return false
     }
     
@@ -78,21 +61,7 @@ extension LandingViewController: LandingTopPanelViewDelegate {
 
 extension LandingViewController: TLPhotosPickerViewControllerDelegate {
     func addPhoto(tag: String, image: UIImage) {
-        if let selectedPhotosVC = self.children.first as? SelectedPhotosCollectionViewController, let model = selectedPhotosVC.collectionViewDataSource.model as? SelectedPhotosViewModel {
-            let selectedPhotoCell = SelectedPhotoCellModel(tag: tag)
-            selectedPhotoCell.image = image
-            if model.sections.isEmpty {
-                let section = CollectionViewSectionModel()
-                model.sections.append(section)
-            } else {
-                if model.sections[0].items.count >= 4 {
-                    return
-                }
-            }
-            model.sections[0].items.append(selectedPhotoCell)
-            selectedPhotosVC.collectionView.insertItems(at: [IndexPath(row: model.sections[0].items.count - 1, section: 0)])
-            selectedPhotosVC.collectionView.reloadEmptyDataSet()
-        }
+        roundedPhotosView.add(image: image)
     }
     
     func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {

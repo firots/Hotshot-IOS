@@ -9,7 +9,7 @@
 import UIKit
 
 class AnalyzingViewController: UIViewController {
-    var images = [AnalyzingImage]()
+    var images = [UIImage]()
     var currentPhotoId = 0
     var timer: Timer?
     
@@ -31,7 +31,7 @@ class AnalyzingViewController: UIViewController {
     
     func addPhotoView() -> PhotoView {
         let photoView = PhotoView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - PhotoView.height / 2, width: PhotoView.width, height: PhotoView.height))
-        photoView.analyzingPhoto(image: images[currentPhotoId].image)
+        photoView.analyzingPhoto(image: images[currentPhotoId])
         if currentPhotoId + 1 >= images.count { currentPhotoId = 0} else { currentPhotoId += 1}
         self.view.addSubview(photoView)
         return photoView
