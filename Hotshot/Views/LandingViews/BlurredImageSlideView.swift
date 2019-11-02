@@ -41,11 +41,8 @@ extension BlurredImageSlideView {
     }
     
     func animate(moveDuration: Double, direction: BlurredImageSlideViewDirection) {
-        let flipDuration = 0.1
-        let totalDuration = moveDuration + flipDuration
-        
+        let totalDuration = moveDuration
         let relativeMoveDuration = moveDuration / totalDuration
-        let relativeFlipDuration = flipDuration / totalDuration
         
         UIView.animateKeyframes(withDuration: totalDuration, delay: 0.0, options: [], animations: { //check for weaks
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: relativeMoveDuration) {
@@ -58,14 +55,13 @@ extension BlurredImageSlideView {
                 }
                 self.imageView.center = CGPoint(x: self.imageView.center.x + movement, y: self.imageView.center.y)
             }
-            UIView.addKeyframe(withRelativeStartTime: relativeMoveDuration, relativeDuration: relativeFlipDuration) {
-                self.changeImage()
-            }
         }) { (completed) in
-            self.animate(moveDuration: self.fullMoveDuration, direction: direction.reverse())
-        }
-        
-        
+            let toImage = self.getRandomImage()
+                UIView.transition(with: self.imageView, duration:1, options: .transitionCrossDissolve, animations: { self.imageView.image = toImage } )
+                { (completed) in
+                    self.animate(moveDuration: self.fullMoveDuration, direction: direction.reverse())
+                }
+            }
     }
 }
 
@@ -73,8 +69,11 @@ extension BlurredImageSlideView {
 extension BlurredImageSlideView {
     func changeImage() {
         if BlurredImageSlideView.images.count == 0 { return }
-        BlurredImageSlideView.images.shuffle()
-        imageView.image = BlurredImageSlideView.images[0]
+        imageView.image = BlurredImageSlideView.images.randomElement()!
+    }
+    
+    func getRandomImage() -> UIImage {
+        return BlurredImageSlideView.images.randomElement()!
     }
 }
 

@@ -31,7 +31,7 @@ extension UIImage {
         
         let filter = CIFilter(name: "CIGaussianBlur")
         filter?.setValue(currentCIImage, forKey: kCIInputImageKey)
-        filter?.setValue(12, forKey: kCIInputRadiusKey)
+        filter?.setValue(10, forKey: kCIInputRadiusKey)
         guard let outputImage = filter?.outputImage else { return nil }
         let context = CIContext()
         guard let cgimg = context.createCGImage(outputImage, from: outputImage.extent) else { return nil }
