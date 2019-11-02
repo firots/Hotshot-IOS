@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingSplitView" customModule="Hotshot" customModuleProvider="target">
+            <connections>
+                <outlet property="blurredImageSlideView" destination="qwU-hJ-uPK" id="QlV-MZ-ekc"/>
+                <outlet property="bottomCons" destination="uSE-Rj-JwI" id="Fjx-8n-rAw"/>
+                <outlet property="iconView" destination="fSz-O1-mCS" id="kl7-kt-4TW"/>
+                <outlet property="subtitle" destination="VC0-Dm-Pck" id="tMZ-F5-8rR"/>
+                <outlet property="title" destination="YHG-04-cd4" id="O1E-Cj-oDt"/>
+                <outlet property="titleContainer" destination="JL7-9e-lt2" id="zTD-GC-jbv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="IvF-EG-Xnt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwU-hJ-uPK" customClass="BlurredImageSlideView" customModule="Hotshot" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JL7-9e-lt2">
+                    <rect key="frame" x="0.0" y="146.5" width="414" height="160"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landinglock.png" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-O1-mCS">
+                            <rect key="frame" x="184.5" y="3" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="037-Ps-Qm2"/>
+                                <constraint firstAttribute="width" constant="45" id="viz-oX-R0E"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHG-04-cd4">
+                            <rect key="frame" x="0.0" y="48" width="414" height="64.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="54"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="YHG-04-cd4" firstAttribute="top" secondItem="fSz-O1-mCS" secondAttribute="bottom" id="8Nt-bf-MtY"/>
+                        <constraint firstItem="YHG-04-cd4" firstAttribute="leading" secondItem="JL7-9e-lt2" secondAttribute="leading" id="91o-wK-DTh"/>
+                        <constraint firstItem="YHG-04-cd4" firstAttribute="centerX" secondItem="JL7-9e-lt2" secondAttribute="centerX" id="Rr8-Qx-ZvH"/>
+                        <constraint firstItem="fSz-O1-mCS" firstAttribute="centerX" secondItem="JL7-9e-lt2" secondAttribute="centerX" id="Tw7-hN-KAt"/>
+                        <constraint firstAttribute="trailing" secondItem="YHG-04-cd4" secondAttribute="trailing" id="fmu-dJ-9yJ"/>
+                        <constraint firstItem="YHG-04-cd4" firstAttribute="centerY" secondItem="JL7-9e-lt2" secondAttribute="centerY" id="si5-4S-ZY2"/>
+                        <constraint firstAttribute="height" constant="160" id="xy4-xJ-SwQ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VC0-Dm-Pck">
+                    <rect key="frame" x="177.5" y="259" width="59" height="28"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VC0-Dm-Pck" firstAttribute="top" secondItem="YHG-04-cd4" secondAttribute="bottom" id="6FB-pN-GJE"/>
+                <constraint firstItem="JL7-9e-lt2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F1Q-SR-Olp"/>
+                <constraint firstItem="qwU-hJ-uPK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K33-7j-Wwm"/>
+                <constraint firstItem="VC0-Dm-Pck" firstAttribute="centerX" secondItem="JL7-9e-lt2" secondAttribute="centerX" id="MGv-IY-rVU"/>
+                <constraint firstItem="qwU-hJ-uPK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Psz-PQ-Bkt"/>
+                <constraint firstAttribute="trailing" secondItem="qwU-hJ-uPK" secondAttribute="trailing" id="Rbb-LV-3zY"/>
+                <constraint firstItem="qwU-hJ-uPK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uiu-0l-Ib3"/>
+                <constraint firstItem="JL7-9e-lt2" firstAttribute="centerY" secondItem="qwU-hJ-uPK" secondAttribute="centerY" id="Ydp-P0-nRz"/>
+                <constraint firstItem="JL7-9e-lt2" firstAttribute="centerX" secondItem="qwU-hJ-uPK" secondAttribute="centerX" id="Z9R-Gj-ocr"/>
+                <constraint firstAttribute="trailing" secondItem="JL7-9e-lt2" secondAttribute="trailing" id="eNL-ty-6ap"/>
+                <constraint firstItem="qwU-hJ-uPK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tys-0j-UOD"/>
+                <constraint firstAttribute="bottom" secondItem="qwU-hJ-uPK" secondAttribute="bottom" id="uSE-Rj-JwI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="212.61160714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="landinglock.png" width="60.5" height="60.5"/>
+    </resources>
+</document>

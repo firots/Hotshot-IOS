@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760BB560236DA8600085ED1C /* BlurredImageSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760BB55F236DA8600085ED1C /* BlurredImageSlideView.xib */; };
+		760BB562236DA8AB0085ED1C /* BlurredImageSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB561236DA8AB0085ED1C /* BlurredImageSlideView.swift */; };
+		760BB568236DB3630085ED1C /* UIImage+Desaturate+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB567236DB3630085ED1C /* UIImage+Desaturate+Blur.swift */; };
+		760BB570236DC3360085ED1C /* hotshotphoto (5).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 760BB56F236DC3360085ED1C /* hotshotphoto (5).jpg */; };
+		760BB572236DC6BE0085ED1C /* UIColor-NetHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */; };
+		760BB578236DD3EE0085ED1C /* LandingSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB577236DD3EE0085ED1C /* LandingSplitView.swift */; };
+		760BB57A236DD3FB0085ED1C /* LandingSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760BB579236DD3FB0085ED1C /* LandingSplitView.xib */; };
+		761C3501236DD7CE007E548C /* hotshotphoto (14).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 761C3500236DD7CE007E548C /* hotshotphoto (14).jpg */; };
+		761C3506236DE266007E548C /* landinglock.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3503236DE266007E548C /* landinglock.png */; };
+		761C3507236DE266007E548C /* landinglock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3504236DE266007E548C /* landinglock@2x.png */; };
+		761C3508236DE266007E548C /* landinglock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3505236DE266007E548C /* landinglock@3x.png */; };
 		7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7637CEC12358EB0400FB6979 /* addphoto.gif */; };
 		7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEC52358FFD800FB6979 /* UIScrollView+EmptyDataSet.m */; };
 		7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7637CEEA23591D2200FB6979 /* CollectionViewModel.swift */; };
@@ -48,6 +59,17 @@
 		1E1580E7F39AA70FD4230568 /* Pods-Hotshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotshot.debug.xcconfig"; path = "Target Support Files/Pods-Hotshot/Pods-Hotshot.debug.xcconfig"; sourceTree = "<group>"; };
 		3DBC4EB5C0DAA490B1AF421E /* Pods_Hotshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA70F2C327E64C82116882F /* Pods-Hotshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hotshot.release.xcconfig"; path = "Target Support Files/Pods-Hotshot/Pods-Hotshot.release.xcconfig"; sourceTree = "<group>"; };
+		760BB55F236DA8600085ED1C /* BlurredImageSlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlurredImageSlideView.xib; sourceTree = "<group>"; };
+		760BB561236DA8AB0085ED1C /* BlurredImageSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurredImageSlideView.swift; sourceTree = "<group>"; };
+		760BB567236DB3630085ED1C /* UIImage+Desaturate+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Desaturate+Blur.swift"; sourceTree = "<group>"; };
+		760BB56F236DC3360085ED1C /* hotshotphoto (5).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hotshotphoto (5).jpg"; sourceTree = "<group>"; };
+		760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-NetHex.swift"; sourceTree = "<group>"; };
+		760BB577236DD3EE0085ED1C /* LandingSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingSplitView.swift; sourceTree = "<group>"; };
+		760BB579236DD3FB0085ED1C /* LandingSplitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingSplitView.xib; sourceTree = "<group>"; };
+		761C3500236DD7CE007E548C /* hotshotphoto (14).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hotshotphoto (14).jpg"; sourceTree = "<group>"; };
+		761C3503236DE266007E548C /* landinglock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landinglock.png; sourceTree = "<group>"; };
+		761C3504236DE266007E548C /* landinglock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landinglock@2x.png"; sourceTree = "<group>"; };
+		761C3505236DE266007E548C /* landinglock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landinglock@3x.png"; sourceTree = "<group>"; };
 		7637CEC12358EB0400FB6979 /* addphoto.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addphoto.gif; sourceTree = "<group>"; };
 		7637CEC42358FFD700FB6979 /* Hotshot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hotshot-Bridging-Header.h"; sourceTree = "<group>"; };
 		7637CEC52358FFD800FB6979 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
@@ -108,12 +130,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		761C3502236DE251007E548C /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				761C3503236DE266007E548C /* landinglock.png */,
+				761C3504236DE266007E548C /* landinglock@2x.png */,
+				761C3505236DE266007E548C /* landinglock@3x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		761C3509236DE8D7007E548C /* LandingSplitPhotos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LandingSplitPhotos;
+			sourceTree = "<group>";
+		};
 		7637CEC02358EAF600FB6979 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				761C3509236DE8D7007E548C /* LandingSplitPhotos */,
+				761C3502236DE251007E548C /* Icons */,
 				763B5A1A236C8DF1000F23CA /* Animated */,
 				763B5A13236C8DD7000F23CA /* Buttons */,
 				76C277A8235B8FB000C1F8DD /* logo.png */,
+				760BB56F236DC3360085ED1C /* hotshotphoto (5).jpg */,
+				761C3500236DD7CE007E548C /* hotshotphoto (14).jpg */,
 				76C277A9235B8FB000C1F8DD /* logo@2x.png */,
 				76C277AA235B8FB000C1F8DD /* logo@3x.png */,
 			);
@@ -242,6 +285,10 @@
 			children = (
 				763B5A0F236C8802000F23CA /* RoundedPhotosView.xib */,
 				763B5A11236C8834000F23CA /* RoundedPhotosView.swift */,
+				760BB55F236DA8600085ED1C /* BlurredImageSlideView.xib */,
+				760BB561236DA8AB0085ED1C /* BlurredImageSlideView.swift */,
+				760BB577236DD3EE0085ED1C /* LandingSplitView.swift */,
+				760BB579236DD3FB0085ED1C /* LandingSplitView.xib */,
 			);
 			path = LandingViews;
 			sourceTree = "<group>";
@@ -263,6 +310,8 @@
 				764A9567235CFCF20075A94D /* UIView+rotate.swift */,
 				7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */,
 				7670F4A7235E28B40031AA55 /* UIView-findViewController.swift */,
+				760BB567236DB3630085ED1C /* UIImage+Desaturate+Blur.swift */,
+				760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,17 +394,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				763B5A17236C8DE1000F23CA /* addbutton@2x.png in Resources */,
+				761C3501236DD7CE007E548C /* hotshotphoto (14).jpg in Resources */,
 				76C277B1235B945200C1F8DD /* hamburger@2x.png in Resources */,
 				76C277AC235B8FB000C1F8DD /* logo@2x.png in Resources */,
+				760BB57A236DD3FB0085ED1C /* LandingSplitView.xib in Resources */,
 				763B5A18236C8DE1000F23CA /* addbutton@3x.png in Resources */,
 				766454592357A302009E1A28 /* LaunchScreen.storyboard in Resources */,
 				763B5A19236C8DE1000F23CA /* addbutton.png in Resources */,
 				76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */,
 				763B5A10236C8802000F23CA /* RoundedPhotosView.xib in Resources */,
 				7670F4A2235E1C690031AA55 /* PhotoView.xib in Resources */,
+				760BB560236DA8600085ED1C /* BlurredImageSlideView.xib in Resources */,
+				761C3508236DE266007E548C /* landinglock@3x.png in Resources */,
+				761C3507236DE266007E548C /* landinglock@2x.png in Resources */,
 				76C277AB235B8FB000C1F8DD /* logo.png in Resources */,
+				760BB570236DC3360085ED1C /* hotshotphoto (5).jpg in Resources */,
 				766454562357A302009E1A28 /* Assets.xcassets in Resources */,
 				766454542357A301009E1A28 /* Main.storyboard in Resources */,
+				761C3506236DE266007E548C /* landinglock.png in Resources */,
 				76C277B3235B945200C1F8DD /* hamburger.png in Resources */,
 				76C277AD235B8FB000C1F8DD /* logo@3x.png in Resources */,
 				7637CEC22358EB0400FB6979 /* addphoto.gif in Resources */,
@@ -421,13 +477,17 @@
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
 				764A955A235CE2F00075A94D /* AnalyzingViewController.swift in Sources */,
 				763B5A12236C8834000F23CA /* RoundedPhotosView.swift in Sources */,
+				760BB568236DB3630085ED1C /* UIImage+Desaturate+Blur.swift in Sources */,
 				76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */,
 				764A9568235CFCF20075A94D /* UIView+rotate.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,
+				760BB562236DA8AB0085ED1C /* BlurredImageSlideView.swift in Sources */,
 				7637CEEF23591E2500FB6979 /* SelectedPhotoCellModel.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
 				7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */,
+				760BB572236DC6BE0085ED1C /* UIColor-NetHex.swift in Sources */,
+				760BB578236DD3EE0085ED1C /* LandingSplitView.swift in Sources */,
 				7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */,
 				764A955D235CE5C20075A94D /* AnalyzingImage.swift in Sources */,
 			);
@@ -588,7 +648,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Hotshot/DZNEmptyDataSet/Hotshot-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -610,7 +670,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hotshot/DZNEmptyDataSet/Hotshot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

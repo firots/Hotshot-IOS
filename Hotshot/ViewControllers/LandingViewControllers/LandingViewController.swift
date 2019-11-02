@@ -13,12 +13,15 @@ import PhotosUI
 final class LandingViewController: UIViewController {
     private let maxSelections = 4
     @IBOutlet weak var roundedPhotosView: RoundedPhotosView!
+    @IBOutlet weak var topSplit: LandingSplitView!
+    @IBOutlet weak var bottomSplit: LandingSplitView!
     
     override func viewDidLoad() {
         roundedPhotosView.backgroundColor = .clear
         super.viewDidLoad()
         setNavigation()
         setDelegates()
+        setSplits()
     }
     
     func setDelegates() {
@@ -30,17 +33,37 @@ final class LandingViewController: UIViewController {
             analyzingVC.images = roundedPhotosView.images()
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
 
-/*extension LandingViewController: LandingBottomPanelViewDelegate {
-    func startTapped() {
+
+/* Set Splits */
+extension LandingViewController {
+    func setSplits() {
+        topSplit.blurredImageSlideView.addImages(images: [UIImage(named: "hotshotphoto (5).jpg")])
+        topSplit.direction = .top
+        topSplit.lock()
+        topSplit.delegate = self
+        
+        bottomSplit.blurredImageSlideView.addImages(images: [UIImage(named: "hotshotphoto (14).jpg")])
+        bottomSplit.direction = .bottom
+        bottomSplit.lock()
+        bottomSplit.delegate = self
+    }
+}
+    
+
+extension LandingViewController: LandingSplitViewDelegate {
+    func splitViewTapped(at direction: SplitViewDirections) {
         performSegue(withIdentifier: "AnalyzeSegue", sender: self)
     }
-}*/
+}
 
 extension LandingViewController: RoundedPhotosViewDelegate {
     func addTapped() {
-        print("a2")
         if isMaxPhotosReached() == true { return }
         loadPhotoPicker()
     }
@@ -62,6 +85,12 @@ extension LandingViewController: RoundedPhotosViewDelegate {
 extension LandingViewController: TLPhotosPickerViewControllerDelegate {
     func addPhoto(tag: String, image: UIImage) {
         roundedPhotosView.add(image: image)
+        if roundedPhotosView.images().count == 1 {
+            topSplit.unlock()
+        } else if roundedPhotosView.images().count > 1 {
+            bottomSplit.unlock()
+            topSplit.lock()
+        }
     }
     
     func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {

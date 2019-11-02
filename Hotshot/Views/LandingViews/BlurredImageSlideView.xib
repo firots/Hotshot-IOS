@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlurredImageSlideView" customModule="Hotshot" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomCons" destination="w5y-As-jZk" id="9ay-g8-V2G"/>
+                <outlet property="imageView" destination="QIq-eT-qNC" id="X3d-zL-a0S"/>
+                <outlet property="overlayView" destination="f4u-T2-wrh" id="I0H-Jk-tyG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="JFh-Vb-T37"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-eT-qNC">
+                    <rect key="frame" x="-100" y="0.0" width="614" height="439"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-T2-wrh">
+                    <rect key="frame" x="-100" y="0.0" width="614" height="439"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="width" secondItem="QIq-eT-qNC" secondAttribute="width" id="1IP-Ji-VXH"/>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="centerX" secondItem="QIq-eT-qNC" secondAttribute="centerX" id="8pt-pz-ZhD"/>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="height" secondItem="QIq-eT-qNC" secondAttribute="height" id="Gsg-XV-ybW"/>
+                <constraint firstAttribute="trailing" secondItem="QIq-eT-qNC" secondAttribute="trailing" constant="-100" id="H79-ij-A1d"/>
+                <constraint firstItem="QIq-eT-qNC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e7g-Yy-pJJ"/>
+                <constraint firstItem="QIq-eT-qNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-100" id="pAz-lB-WsK"/>
+                <constraint firstAttribute="bottom" secondItem="QIq-eT-qNC" secondAttribute="bottom" id="w5y-As-jZk"/>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="centerY" secondItem="QIq-eT-qNC" secondAttribute="centerY" id="xRg-pZ-37U"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.81696428571428"/>
+        </view>
+    </objects>
+</document>

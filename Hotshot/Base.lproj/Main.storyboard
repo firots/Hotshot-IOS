@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Xr-dx-2XZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Xr-dx-2XZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,42 +17,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HF9-HJ-thJ">
-                                <rect key="frame" x="0.0" y="43" width="414" height="864"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-gE-5IG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="432"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-gE-5IG" customClass="LandingSplitView" customModule="Hotshot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ef-8j-XOe">
-                                        <rect key="frame" x="0.0" y="432" width="414" height="432"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ef-8j-XOe" customClass="LandingSplitView" customModule="Hotshot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTk-Gd-cED" customClass="RoundedPhotosView" customModule="Hotshot" customModuleProvider="target">
-                                <rect key="frame" x="42" y="431" width="330" height="88"/>
+                                <rect key="frame" x="42" y="412" width="330" height="72"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="303-bb-bZC"/>
+                                    <constraint firstAttribute="height" constant="72" id="303-bb-bZC"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lTk-Gd-cED" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A5x-Us-WT1"/>
-                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GIR-Eb-RL9"/>
-                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-45" id="OeC-P2-9C1"/>
-                            <constraint firstItem="lTk-Gd-cED" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Qvc-Wv-EV6"/>
-                            <constraint firstItem="lTk-Gd-cED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="X0s-st-0Bc"/>
-                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="45" id="doi-Bl-sGq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lTk-Gd-cED" secondAttribute="trailing" constant="42" id="uQe-j6-rpC"/>
-                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uZZ-PH-ssQ"/>
+                            <constraint firstItem="lTk-Gd-cED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A5x-Us-WT1"/>
+                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="bottom" secondItem="crW-A6-zeo" secondAttribute="bottom" id="FZj-5E-dcR"/>
+                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GIR-Eb-RL9"/>
+                            <constraint firstItem="lTk-Gd-cED" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qvc-Wv-EV6"/>
+                            <constraint firstItem="lTk-Gd-cED" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="42" id="X0s-st-0Bc"/>
+                            <constraint firstItem="crW-A6-zeo" firstAttribute="top" secondItem="HF9-HJ-thJ" secondAttribute="top" id="rbI-y6-k9x"/>
+                            <constraint firstAttribute="trailing" secondItem="lTk-Gd-cED" secondAttribute="trailing" constant="42" id="uQe-j6-rpC"/>
+                            <constraint firstItem="HF9-HJ-thJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uZZ-PH-ssQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="crW-A6-zeo"/>
                     </view>
                     <navigationItem key="navigationItem" id="YtV-dN-xcm"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="bottomSplit" destination="5ef-8j-XOe" id="i2Y-F8-bLx"/>
                         <outlet property="roundedPhotosView" destination="lTk-Gd-cED" id="jn5-aO-GgI"/>
+                        <outlet property="topSplit" destination="fjx-gE-5IG" id="l1v-SZ-4Wf"/>
                         <segue destination="2hU-4c-Eqf" kind="presentation" identifier="AnalyzeSegue" id="7UB-Xu-8mh"/>
                     </connections>
                 </viewController>
@@ -96,7 +100,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="2mA-US-r3s" firstAttribute="top" secondItem="rVx-Sk-j0j" secondAttribute="top" constant="44" id="4DV-2f-qFW"/>
-                            <constraint firstItem="2mA-US-r3s" firstAttribute="centerX" secondItem="rVx-Sk-j0j" secondAttribute="centerX" id="HtQ-sw-PbQ"/>
                             <constraint firstItem="2mA-US-r3s" firstAttribute="leading" secondItem="rVx-Sk-j0j" secondAttribute="leading" id="Oat-VQ-0f4"/>
                             <constraint firstItem="rVx-Sk-j0j" firstAttribute="trailing" secondItem="2mA-US-r3s" secondAttribute="trailing" id="k1r-iR-4DP"/>
                         </constraints>
