@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-eT-qNC">
-                    <rect key="frame" x="-100" y="0.0" width="614" height="439"/>
+                    <rect key="frame" x="-200" y="0.0" width="814" height="439"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-T2-wrh">
-                    <rect key="frame" x="-100" y="0.0" width="614" height="439"/>
+                    <rect key="frame" x="-200" y="0.0" width="814" height="439"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
@@ -33,9 +33,9 @@
                 <constraint firstItem="f4u-T2-wrh" firstAttribute="width" secondItem="QIq-eT-qNC" secondAttribute="width" id="1IP-Ji-VXH"/>
                 <constraint firstItem="f4u-T2-wrh" firstAttribute="centerX" secondItem="QIq-eT-qNC" secondAttribute="centerX" id="8pt-pz-ZhD"/>
                 <constraint firstItem="f4u-T2-wrh" firstAttribute="height" secondItem="QIq-eT-qNC" secondAttribute="height" id="Gsg-XV-ybW"/>
-                <constraint firstAttribute="trailing" secondItem="QIq-eT-qNC" secondAttribute="trailing" constant="-100" id="H79-ij-A1d"/>
+                <constraint firstAttribute="trailing" secondItem="QIq-eT-qNC" secondAttribute="trailing" constant="-200" id="H79-ij-A1d"/>
                 <constraint firstItem="QIq-eT-qNC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e7g-Yy-pJJ"/>
-                <constraint firstItem="QIq-eT-qNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-100" id="pAz-lB-WsK"/>
+                <constraint firstItem="QIq-eT-qNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-200" id="pAz-lB-WsK"/>
                 <constraint firstAttribute="bottom" secondItem="QIq-eT-qNC" secondAttribute="bottom" id="w5y-As-jZk"/>
                 <constraint firstItem="f4u-T2-wrh" firstAttribute="centerY" secondItem="QIq-eT-qNC" secondAttribute="centerY" id="xRg-pZ-37U"/>
             </constraints>

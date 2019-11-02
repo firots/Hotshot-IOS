@@ -11,10 +11,12 @@
             <connections>
                 <outlet property="blurredImageSlideView" destination="qwU-hJ-uPK" id="QlV-MZ-ekc"/>
                 <outlet property="bottomCons" destination="uSE-Rj-JwI" id="Fjx-8n-rAw"/>
+                <outlet property="bottomLabel" destination="Y0i-Qo-HWF" id="F40-7o-6pX"/>
                 <outlet property="iconView" destination="fSz-O1-mCS" id="kl7-kt-4TW"/>
                 <outlet property="subtitle" destination="VC0-Dm-Pck" id="tMZ-F5-8rR"/>
                 <outlet property="title" destination="YHG-04-cd4" id="O1E-Cj-oDt"/>
                 <outlet property="titleContainer" destination="JL7-9e-lt2" id="zTD-GC-jbv"/>
+                <outlet property="topLabel" destination="9C3-eo-73v" id="FrV-3U-bPe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="IvF-EG-Xnt"/>
             </connections>
         </placeholder>
@@ -25,7 +27,7 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwU-hJ-uPK" customClass="BlurredImageSlideView" customModule="Hotshot" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JL7-9e-lt2">
                     <rect key="frame" x="0.0" y="146.5" width="414" height="160"/>
@@ -61,6 +63,18 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C3-eo-73v">
+                    <rect key="frame" x="0.0" y="104.5" width="414" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0i-Qo-HWF">
+                    <rect key="frame" x="0.0" y="306.5" width="414" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -68,14 +82,21 @@
                 <constraint firstItem="JL7-9e-lt2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F1Q-SR-Olp"/>
                 <constraint firstItem="qwU-hJ-uPK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K33-7j-Wwm"/>
                 <constraint firstItem="VC0-Dm-Pck" firstAttribute="centerX" secondItem="JL7-9e-lt2" secondAttribute="centerX" id="MGv-IY-rVU"/>
+                <constraint firstItem="JL7-9e-lt2" firstAttribute="top" secondItem="9C3-eo-73v" secondAttribute="bottom" constant="16" id="OsZ-nP-8Fe"/>
                 <constraint firstItem="qwU-hJ-uPK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Psz-PQ-Bkt"/>
                 <constraint firstAttribute="trailing" secondItem="qwU-hJ-uPK" secondAttribute="trailing" id="Rbb-LV-3zY"/>
+                <constraint firstItem="Y0i-Qo-HWF" firstAttribute="top" secondItem="JL7-9e-lt2" secondAttribute="bottom" id="TFj-v7-jxb"/>
                 <constraint firstItem="qwU-hJ-uPK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uiu-0l-Ib3"/>
                 <constraint firstItem="JL7-9e-lt2" firstAttribute="centerY" secondItem="qwU-hJ-uPK" secondAttribute="centerY" id="Ydp-P0-nRz"/>
                 <constraint firstItem="JL7-9e-lt2" firstAttribute="centerX" secondItem="qwU-hJ-uPK" secondAttribute="centerX" id="Z9R-Gj-ocr"/>
                 <constraint firstAttribute="trailing" secondItem="JL7-9e-lt2" secondAttribute="trailing" id="eNL-ty-6ap"/>
+                <constraint firstAttribute="trailing" secondItem="Y0i-Qo-HWF" secondAttribute="trailing" id="gq5-sF-GtA"/>
+                <constraint firstItem="Y0i-Qo-HWF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hVR-JE-ro7"/>
+                <constraint firstItem="9C3-eo-73v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j04-Nz-i7L"/>
+                <constraint firstItem="9C3-eo-73v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qYF-tj-uRJ"/>
                 <constraint firstItem="qwU-hJ-uPK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tys-0j-UOD"/>
                 <constraint firstAttribute="bottom" secondItem="qwU-hJ-uPK" secondAttribute="bottom" id="uSE-Rj-JwI"/>
+                <constraint firstAttribute="trailing" secondItem="9C3-eo-73v" secondAttribute="trailing" id="xBZ-eD-Jcu"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

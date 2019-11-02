@@ -16,6 +16,8 @@ class LandingSplitView: CustomViewBase {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
     @IBOutlet weak var titleContainer: UIView!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
     
     var locked = true
     weak var delegate: LandingSplitViewDelegate?
@@ -26,7 +28,15 @@ class LandingSplitView: CustomViewBase {
         }
     }
     
-    var direction = SplitViewDirections.top
+    var direction = SplitViewDirections.top {
+        didSet {
+            if direction == .bottom {
+                
+            } else {
+                
+            }
+        }
+    }
     
     func lock() {
         color = .gray
@@ -36,6 +46,8 @@ class LandingSplitView: CustomViewBase {
             title.text = "ADD MORE PHOTOS"
         }
         subtitle.text = "Feature Locked"
+        bottomLabel.isHidden = true
+        topLabel.isHidden = true
         locked = true
     }
     
@@ -44,10 +56,12 @@ class LandingSplitView: CustomViewBase {
             color = SplitViewColors.red
             title.text = "SHOW ME"
             subtitle.text = "Who do I look like?"
+            topLabel.isHidden = false
         } else {
             color = SplitViewColors.blue
             title.text = "PICK MY"
             subtitle.text = "Hotshot Photo"
+            bottomLabel.isHidden = false
         }
         locked = false
     }

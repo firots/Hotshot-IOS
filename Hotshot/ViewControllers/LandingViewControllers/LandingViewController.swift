@@ -43,15 +43,19 @@ final class LandingViewController: UIViewController {
 /* Set Splits */
 extension LandingViewController {
     func setSplits() {
-        topSplit.blurredImageSlideView.addImages(images: [UIImage(named: "hotshotphoto (5).jpg")])
+        BlurredImageSlideView.cacheImages()
+        
         topSplit.direction = .top
         topSplit.lock()
         topSplit.delegate = self
+        topSplit.blurredImageSlideView.startAnimation(direction: .left)
+        topSplit.blurredImageSlideView.changeImage()
         
-        bottomSplit.blurredImageSlideView.addImages(images: [UIImage(named: "hotshotphoto (14).jpg")])
         bottomSplit.direction = .bottom
         bottomSplit.lock()
         bottomSplit.delegate = self
+        bottomSplit.blurredImageSlideView.startAnimation(direction: .right)
+        bottomSplit.blurredImageSlideView.changeImage()
     }
 }
     
