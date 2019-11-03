@@ -23,6 +23,7 @@ final class BlurredImageSlideView: CustomViewBase {
     
     override func awakeFromNib() {
         setVisuals()
+        self.view.frame.size = self.frame.size
     }
     
     static func cacheImages() {

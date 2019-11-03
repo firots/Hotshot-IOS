@@ -15,7 +15,6 @@ final class LandingSplitView: CustomViewBase {
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
-    @IBOutlet weak var titleContainer: UIView!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     
@@ -35,7 +34,7 @@ final class LandingSplitView: CustomViewBase {
     }
     
     func lock() {
-        color = .gray
+        color = SplitViewColors.gray
         if direction == .top {
             title.text = "SINGLE MEDIA"
         } else {
@@ -66,8 +65,6 @@ final class LandingSplitView: CustomViewBase {
     }
     
     override func awakeFromNib() {
-        titleContainer.backgroundColor = .clear
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapped))
         view.addGestureRecognizer(tap)
         view.isUserInteractionEnabled = true

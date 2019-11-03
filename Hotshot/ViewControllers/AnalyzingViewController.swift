@@ -41,10 +41,6 @@ class AnalyzingViewController: UIViewController {
         return photoView
     }
     
-    deinit {
-        print("by")
-    }
-    
     @objc func getPhoto() {
         let photoView = addPhotoView()
         
