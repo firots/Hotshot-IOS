@@ -25,17 +25,17 @@ extension UIImage {
         return UIImage(cgImage: cgimg)
     }
     
-    func blur() -> UIImage? {
+    func blur(radius: CGFloat) -> UIImage? {
         guard let currentCGImage = self.cgImage else { return nil }
         let currentCIImage = CIImage(cgImage: currentCGImage)
         
         let filter = CIFilter(name: "CIGaussianBlur")
         filter?.setValue(currentCIImage, forKey: kCIInputImageKey)
-        filter?.setValue(10, forKey: kCIInputRadiusKey)
+        filter?.setValue(radius, forKey: kCIInputRadiusKey)
+        
         guard let outputImage = filter?.outputImage else { return nil }
         let context = CIContext()
-        guard let cgimg = context.createCGImage(outputImage, from: outputImage.extent) else { return nil }
-        
+        guard let cgimg = context.createCGImage(outputImage, from: currentCIImage.extent) else { return nil }
         return (UIImage(cgImage: cgimg))
     }
 }

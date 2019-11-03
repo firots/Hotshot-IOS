@@ -30,11 +30,7 @@ class LandingSplitView: CustomViewBase {
     
     var direction = SplitViewDirections.top {
         didSet {
-            if direction == .bottom {
-                
-            } else {
-                
-            }
+            setAttLabels()
         }
     }
     
@@ -45,6 +41,7 @@ class LandingSplitView: CustomViewBase {
         } else {
             title.text = "ADD MORE PHOTOS"
         }
+        iconView.image = UIImage(named: "landinglock.png")
         subtitle.text = "Feature Locked"
         bottomLabel.isHidden = true
         topLabel.isHidden = true
@@ -57,11 +54,13 @@ class LandingSplitView: CustomViewBase {
             title.text = "SHOW ME"
             subtitle.text = "Who do I look like?"
             topLabel.isHidden = false
+            iconView.image = UIImage(named: "landingtoplogo.png")
         } else {
             color = SplitViewColors.blue
             title.text = "PICK MY"
             subtitle.text = "Hotshot Photo"
             bottomLabel.isHidden = false
+            iconView.image = UIImage(named: "landingbottomlogo.png")
         }
         locked = false
     }
@@ -79,6 +78,34 @@ class LandingSplitView: CustomViewBase {
         delegate?.splitViewTapped(at: direction)
     }
 
+}
+
+extension LandingSplitView {
+    func setAttLabels() {
+        if direction == .bottom {
+            let bottomString = "let us tell you which photo is the best"
+            let boldAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont(name: "KenyanCoffeeRg-Bold", size: 22.0) as Any]
+            let photo = NSString(string: bottomString).range(of: "photo")
+            let best = NSString(string: bottomString).range(of: "best")
+
+            let helloWorldAttributedString = NSMutableAttributedString(string: bottomString)
+            helloWorldAttributedString.addAttributes(boldAttributes, range: photo)
+            helloWorldAttributedString.addAttributes(boldAttributes, range: best)
+
+            bottomLabel.attributedText = helloWorldAttributedString
+        } else {
+            let bottomString = "let us tell you which celebrity is your look-alike"
+            let boldAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont(name: "KenyanCoffeeRg-Bold", size: 22.0) as Any]
+            let photo = NSString(string: bottomString).range(of: "celebrity")
+            let best = NSString(string: bottomString).range(of: "lookalike")
+
+            let helloWorldAttributedString = NSMutableAttributedString(string: bottomString)
+            helloWorldAttributedString.addAttributes(boldAttributes, range: photo)
+            helloWorldAttributedString.addAttributes(boldAttributes, range: best)
+
+            topLabel.attributedText = helloWorldAttributedString
+        }
+    }
 }
 
 protocol LandingSplitViewDelegate: class {

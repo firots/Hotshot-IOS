@@ -23,7 +23,7 @@ final class LandingViewController: UIViewController {
         setDelegates()
         setSplits()
     }
-    
+
     func setDelegates() {
         roundedPhotosView.delegate = self
     }
@@ -43,8 +43,6 @@ final class LandingViewController: UIViewController {
 /* Set Splits */
 extension LandingViewController {
     func setSplits() {
-        BlurredImageSlideView.cacheImages()
-        
         topSplit.direction = .top
         topSplit.lock()
         topSplit.delegate = self

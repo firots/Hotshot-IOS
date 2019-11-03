@@ -21,23 +21,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QIq-eT-qNC">
-                    <rect key="frame" x="-200" y="0.0" width="814" height="439"/>
+                    <rect key="frame" x="-15" y="0.0" width="444" height="439"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-T2-wrh">
-                    <rect key="frame" x="-200" y="0.0" width="814" height="439"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="f4u-T2-wrh" firstAttribute="width" secondItem="QIq-eT-qNC" secondAttribute="width" id="1IP-Ji-VXH"/>
-                <constraint firstItem="f4u-T2-wrh" firstAttribute="centerX" secondItem="QIq-eT-qNC" secondAttribute="centerX" id="8pt-pz-ZhD"/>
-                <constraint firstItem="f4u-T2-wrh" firstAttribute="height" secondItem="QIq-eT-qNC" secondAttribute="height" id="Gsg-XV-ybW"/>
-                <constraint firstAttribute="trailing" secondItem="QIq-eT-qNC" secondAttribute="trailing" constant="-200" id="H79-ij-A1d"/>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ClZ-EB-yya"/>
+                <constraint firstAttribute="trailing" secondItem="QIq-eT-qNC" secondAttribute="trailing" constant="-15" id="H79-ij-A1d"/>
+                <constraint firstItem="f4u-T2-wrh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e4O-J5-Mdq"/>
                 <constraint firstItem="QIq-eT-qNC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="e7g-Yy-pJJ"/>
-                <constraint firstItem="QIq-eT-qNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-200" id="pAz-lB-WsK"/>
+                <constraint firstAttribute="bottom" secondItem="f4u-T2-wrh" secondAttribute="bottom" id="l0L-F3-BO7"/>
+                <constraint firstAttribute="trailing" secondItem="f4u-T2-wrh" secondAttribute="trailing" id="lpj-E2-aKa"/>
+                <constraint firstItem="QIq-eT-qNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-15" id="pAz-lB-WsK"/>
                 <constraint firstAttribute="bottom" secondItem="QIq-eT-qNC" secondAttribute="bottom" id="w5y-As-jZk"/>
-                <constraint firstItem="f4u-T2-wrh" firstAttribute="centerY" secondItem="QIq-eT-qNC" secondAttribute="centerY" id="xRg-pZ-37U"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
