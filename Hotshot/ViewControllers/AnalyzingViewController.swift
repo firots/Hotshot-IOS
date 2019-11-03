@@ -29,6 +29,10 @@ class AnalyzingViewController: UIViewController {
         timer?.invalidate()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func addPhotoView() -> PhotoView {
         let photoView = PhotoView(frame: CGRect(x: view.frame.width + 400, y: view.center.y - PhotoView.height / 2, width: PhotoView.width, height: PhotoView.height))
         photoView.analyzingPhoto(image: images[currentPhotoId])

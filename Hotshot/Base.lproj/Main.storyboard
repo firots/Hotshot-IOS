@@ -57,7 +57,7 @@
                         <outlet property="bottomSplit" destination="5ef-8j-XOe" id="i2Y-F8-bLx"/>
                         <outlet property="roundedPhotosView" destination="lTk-Gd-cED" id="jn5-aO-GgI"/>
                         <outlet property="topSplit" destination="fjx-gE-5IG" id="l1v-SZ-4Wf"/>
-                        <segue destination="2hU-4c-Eqf" kind="presentation" identifier="AnalyzeSegue" id="7UB-Xu-8mh"/>
+                        <segue destination="2hU-4c-Eqf" kind="show" identifier="AnalyzeSegue" id="7UB-Xu-8mh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -87,11 +87,11 @@
             <objects>
                 <viewController storyboardIdentifier="AnalyzingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2hU-4c-Eqf" customClass="AnalyzingViewController" customModule="Hotshot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qR8-iC-gDo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="analyzing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mA-US-r3s">
-                                <rect key="frame" x="0.0" y="44" width="414" height="41"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -105,6 +105,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rVx-Sk-j0j"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BWN-Ox-2Kg"/>
                     <connections>
                         <outlet property="workingLabel" destination="2mA-US-r3s" id="YOo-kL-Un0"/>
                     </connections>

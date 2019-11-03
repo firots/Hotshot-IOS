@@ -84,29 +84,22 @@ final class LandingSplitView: CustomViewBase {
 /* Attr Strings */
 extension LandingSplitView {
     func setAttLabels() {
+        let descString: String
+        var stringsToAttr = [String: [NSAttributedString.Key: Any]]()
+        let boldAttr = [NSAttributedString.Key.font: UIFont(name: "KenyanCoffeeRg-Bold", size: 22.0) as Any]
+        let label: UILabel
         if direction == .bottom {
-            let bottomString = "let us tell you which photo is the best"
-            let boldAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont(name: "KenyanCoffeeRg-Bold", size: 22.0) as Any]
-            let photo = NSString(string: bottomString).range(of: "photo")
-            let best = NSString(string: bottomString).range(of: "best")
-
-            let helloWorldAttributedString = NSMutableAttributedString(string: bottomString)
-            helloWorldAttributedString.addAttributes(boldAttributes, range: photo)
-            helloWorldAttributedString.addAttributes(boldAttributes, range: best)
-
-            bottomLabel.attributedText = helloWorldAttributedString
+            descString = "let us tell you which photo is the best"
+            stringsToAttr["photo"] = boldAttr
+            stringsToAttr["best"] = boldAttr
+            label = bottomLabel
         } else {
-            let bottomString = "let us tell you which celebrity is your look-alike"
-            let boldAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont(name: "KenyanCoffeeRg-Bold", size: 22.0) as Any]
-            let photo = NSString(string: bottomString).range(of: "celebrity")
-            let best = NSString(string: bottomString).range(of: "lookalike")
-
-            let helloWorldAttributedString = NSMutableAttributedString(string: bottomString)
-            helloWorldAttributedString.addAttributes(boldAttributes, range: photo)
-            helloWorldAttributedString.addAttributes(boldAttributes, range: best)
-
-            topLabel.attributedText = helloWorldAttributedString
+            descString = "let us tell you which celebrity is your look-alike"
+            stringsToAttr["celebrity"] = boldAttr
+            stringsToAttr["look-alike"] = boldAttr
+            label = topLabel
         }
+        label.attributedText = descString.setAttr(words: stringsToAttr)
     }
 }
 
@@ -124,3 +117,5 @@ enum SplitViewDirections {
     case top
     case bottom
 }
+
+

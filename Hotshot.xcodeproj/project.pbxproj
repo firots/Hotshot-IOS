@@ -66,6 +66,7 @@
 		7670F4A4235E1CFD0031AA55 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670F4A3235E1CFD0031AA55 /* PhotoView.swift */; };
 		7670F4A6235E22CB0031AA55 /* UIView+AlphaGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */; };
 		7670F4A8235E28B40031AA55 /* UIView-findViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7670F4A7235E28B40031AA55 /* UIView-findViewController.swift */; };
+		76864386236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76864385236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift */; };
 		7688DA5C235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */; };
 		76A58AC3236E4880008C9DD9 /* kenyan coffee bd it.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A58ABF236E4865008C9DD9 /* kenyan coffee bd it.ttf */; };
 		76A58AC4236E4880008C9DD9 /* kenyan coffee bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A58AC0236E4865008C9DD9 /* kenyan coffee bd.ttf */; };
@@ -155,6 +156,7 @@
 		7670F4A3235E1CFD0031AA55 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		7670F4A5235E22CB0031AA55 /* UIView+AlphaGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AlphaGlow.swift"; sourceTree = "<group>"; };
 		7670F4A7235E28B40031AA55 /* UIView-findViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-findViewController.swift"; sourceTree = "<group>"; };
+		76864385236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+SetAttr.swift"; sourceTree = "<group>"; };
 		7688DA5B235A7AD300DC614D /* TLPhotosPickerConfigure+PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TLPhotosPickerConfigure+PhotoPicker.swift"; sourceTree = "<group>"; };
 		76A58ABF236E4865008C9DD9 /* kenyan coffee bd it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kenyan coffee bd it.ttf"; sourceTree = "<group>"; };
 		76A58AC0236E4865008C9DD9 /* kenyan coffee bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "kenyan coffee bd.ttf"; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				7670F4A7235E28B40031AA55 /* UIView-findViewController.swift */,
 				760BB567236DB3630085ED1C /* UIImage+Desaturate+Blur.swift */,
 				760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */,
+				76864385236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */,
 				7670F4A4235E1CFD0031AA55 /* PhotoView.swift in Sources */,
 				7670F4A6235E22CB0031AA55 /* UIView+AlphaGlow.swift in Sources */,
+				76864386236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift in Sources */,
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
 				764A955A235CE2F00075A94D /* AnalyzingViewController.swift in Sources */,
