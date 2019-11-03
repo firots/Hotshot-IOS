@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LandingSplitView: CustomViewBase {
+final class LandingSplitView: CustomViewBase {
     @IBOutlet weak var blurredImageSlideView: BlurredImageSlideView!
     @IBOutlet var view: UIView!
     @IBOutlet weak var bottomCons: NSLayoutConstraint!
@@ -80,6 +80,8 @@ class LandingSplitView: CustomViewBase {
 
 }
 
+
+/* Attr Strings */
 extension LandingSplitView {
     func setAttLabels() {
         if direction == .bottom {

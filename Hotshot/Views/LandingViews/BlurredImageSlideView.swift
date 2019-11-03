@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BlurredImageSlideView: CustomViewBase {
+final class BlurredImageSlideView: CustomViewBase {
     
     @IBOutlet var view: UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -78,8 +78,6 @@ extension BlurredImageSlideView {
         setOverlay()
     }
 }
-
-
 
 enum BlurredImageSlideViewDirection {
     case left
