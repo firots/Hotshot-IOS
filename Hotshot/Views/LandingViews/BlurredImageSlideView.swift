@@ -49,10 +49,7 @@ extension BlurredImageSlideView {
             self.imageView.center.x = self.view.center.x + movement
         }) { (completed) in
             let toImage = self.getRandomImage()
-            UIView.transition(with: self.imageView, duration:1, options: .transitionCrossDissolve, animations: { self.imageView.image = toImage } )
-            { (completed) in
-                    
-            }
+            UIView.transition(with: self.imageView, duration:1, options: .transitionCrossDissolve, animations: { self.imageView.image = toImage }, completion: nil )
             self.animate(moveDuration: self.moveDuration, direction: direction.reverse(), movement: movement * -1)
         }
     }

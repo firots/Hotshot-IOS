@@ -1,16 +1,20 @@
 PODS:
+  - Alamofire (5.0.0-rc.3)
   - TLPhotoPicker (1.9.9)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
   - TLPhotoPicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - TLPhotoPicker
 
 SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   TLPhotoPicker: 95cbd6d8f66fca5a4ddd8167db5081e1ed676322
 
-PODFILE CHECKSUM: 9bad21ddfc1ed9bd0653c65d7a417ec134607430
+PODFILE CHECKSUM: 2969974a150cf37cda5e8e7e0c88b8ab4d7c1a9c
 
 COCOAPODS: 1.7.5

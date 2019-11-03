@@ -60,7 +60,11 @@ extension LandingViewController {
 
 extension LandingViewController: LandingSplitViewDelegate {
     func splitViewTapped(at direction: SplitViewDirections) {
-        performSegue(withIdentifier: "AnalyzeSegue", sender: self)
+        if direction == .top {
+            ApiTest.findSimilar(image: roundedPhotosView.images()[0])
+        } else {
+            performSegue(withIdentifier: "AnalyzeSegue", sender: self)
+        }
     }
 }
 

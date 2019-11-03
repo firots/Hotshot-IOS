@@ -5,9 +5,12 @@ target 'Hotshot' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  platform :ios, '9.1'
-  pod "TLPhotoPicker"
+  platform :ios, '11.4'
+
 
   # Pods for Hotshot
+  pod "TLPhotoPicker"
+
+  pod 'Alamofire', '~> 5.0.0-rc.3'
 
 end
