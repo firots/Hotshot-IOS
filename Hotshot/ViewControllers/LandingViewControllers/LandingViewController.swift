@@ -26,6 +26,7 @@ final class LandingViewController: UIViewController {
 
     func setDelegates() {
         roundedPhotosView.delegate = self
+        HotshotAPI.shared.delegate = self
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,10 +62,32 @@ extension LandingViewController {
 extension LandingViewController: LandingSplitViewDelegate {
     func splitViewTapped(at direction: SplitViewDirections) {
         if direction == .top {
-            ApiTest.findSimilar(image: roundedPhotosView.images()[0])
+            HotshotAPI.shared.findSimilar(image: roundedPhotosView.images()[0])
         } else {
             performSegue(withIdentifier: "AnalyzeSegue", sender: self)
         }
+    }
+}
+
+extension LandingViewController: ApiTestDelegate {
+    func findSimilar(_ result: FindSimilarResult) {
+        var description = ""
+        if !result.error {
+            for celeb in result.celebs {
+                description += "\n\(celeb.name)"
+                description += "\n\(celeb.percentage)"
+                description += "\n\(celeb.rank)"
+                description += "\n"
+            }
+        } else {
+            description = "Error"
+        }
+
+        
+        let ac = UIAlertController(title: "Enter answer", message: description, preferredStyle: .alert)
+        let submitAction = UIAlertAction(title: "OK", style: .default)
+        ac.addAction(submitAction)
+        present(ac, animated: true)
     }
 }
 

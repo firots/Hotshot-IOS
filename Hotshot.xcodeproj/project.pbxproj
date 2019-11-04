@@ -13,7 +13,7 @@
 		760BB572236DC6BE0085ED1C /* UIColor-NetHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */; };
 		760BB578236DD3EE0085ED1C /* LandingSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760BB577236DD3EE0085ED1C /* LandingSplitView.swift */; };
 		760BB57A236DD3FB0085ED1C /* LandingSplitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760BB579236DD3FB0085ED1C /* LandingSplitView.xib */; };
-		7610D962236F60310006BC1F /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610D961236F60310006BC1F /* ApiTest.swift */; };
+		7610D962236F60310006BC1F /* HotshotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7610D961236F60310006BC1F /* HotshotAPI.swift */; };
 		761C3506236DE266007E548C /* landinglock.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3503236DE266007E548C /* landinglock.png */; };
 		761C3507236DE266007E548C /* landinglock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3504236DE266007E548C /* landinglock@2x.png */; };
 		761C3508236DE266007E548C /* landinglock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 761C3505236DE266007E548C /* landinglock@3x.png */; };
@@ -86,6 +86,7 @@
 		76C277B1235B945200C1F8DD /* hamburger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AE235B945200C1F8DD /* hamburger@2x.png */; };
 		76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AF235B945200C1F8DD /* hamburger@3x.png */; };
 		76C277B3235B945200C1F8DD /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277B0235B945200C1F8DD /* hamburger.png */; };
+		76DF53F52370C9A600DA05B2 /* FindSimilar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF53F42370C9A600DA05B2 /* FindSimilar.swift */; };
 		76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */; };
 		87D02F1EA2A764AF5B31BB53 /* Pods_Hotshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBC4EB5C0DAA490B1AF421E /* Pods_Hotshot.framework */; };
 /* End PBXBuildFile section */
@@ -100,7 +101,7 @@
 		760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-NetHex.swift"; sourceTree = "<group>"; };
 		760BB577236DD3EE0085ED1C /* LandingSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingSplitView.swift; sourceTree = "<group>"; };
 		760BB579236DD3FB0085ED1C /* LandingSplitView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingSplitView.xib; sourceTree = "<group>"; };
-		7610D961236F60310006BC1F /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
+		7610D961236F60310006BC1F /* HotshotAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotshotAPI.swift; sourceTree = "<group>"; };
 		761C3503236DE266007E548C /* landinglock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landinglock.png; sourceTree = "<group>"; };
 		761C3504236DE266007E548C /* landinglock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landinglock@2x.png"; sourceTree = "<group>"; };
 		761C3505236DE266007E548C /* landinglock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "landinglock@3x.png"; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 		76C277AE235B945200C1F8DD /* hamburger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@2x.png"; sourceTree = "<group>"; };
 		76C277AF235B945200C1F8DD /* hamburger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@3x.png"; sourceTree = "<group>"; };
 		76C277B0235B945200C1F8DD /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
+		76DF53F42370C9A600DA05B2 /* FindSimilar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSimilar.swift; sourceTree = "<group>"; };
 		76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -340,6 +342,7 @@
 		7664544B2357A301009E1A28 /* Hotshot */ = {
 			isa = PBXGroup;
 			children = (
+				76DF53F32370C98400DA05B2 /* API */,
 				76A58ABE236E4843008C9DD9 /* Fonts */,
 				7664545A2357A302009E1A28 /* Info.plist */,
 				766454522357A301009E1A28 /* Main.storyboard */,
@@ -355,7 +358,6 @@
 				766454602357A70B009E1A28 /* ViewControllers */,
 				7637CEE823591CDB00FB6979 /* ViewModels */,
 				766454612357A71F009E1A28 /* Views */,
-				7610D961236F60310006BC1F /* ApiTest.swift */,
 			);
 			path = Hotshot;
 			sourceTree = "<group>";
@@ -434,6 +436,15 @@
 				76A58AD3236E4E59008C9DD9 /* Kenyan Coffee W00 Light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		76DF53F32370C98400DA05B2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7610D961236F60310006BC1F /* HotshotAPI.swift */,
+				76DF53F42370C9A600DA05B2 /* FindSimilar.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		CA75800E158BB147764D18D6 /* Pods */ = {
@@ -619,6 +630,7 @@
 				7637CEEB23591D2200FB6979 /* CollectionViewModel.swift in Sources */,
 				7670F4A4235E1CFD0031AA55 /* PhotoView.swift in Sources */,
 				7670F4A6235E22CB0031AA55 /* UIView+AlphaGlow.swift in Sources */,
+				76DF53F52370C9A600DA05B2 /* FindSimilar.swift in Sources */,
 				76864386236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift in Sources */,
 				766454682357ABF9009E1A28 /* CustomViewBase.swift in Sources */,
 				7664544D2357A301009E1A28 /* AppDelegate.swift in Sources */,
@@ -629,7 +641,7 @@
 				764A9568235CFCF20075A94D /* UIView+rotate.swift in Sources */,
 				766454632357A93A009E1A28 /* SceneDelegate.swift in Sources */,
 				760BB562236DA8AB0085ED1C /* BlurredImageSlideView.swift in Sources */,
-				7610D962236F60310006BC1F /* ApiTest.swift in Sources */,
+				7610D962236F60310006BC1F /* HotshotAPI.swift in Sources */,
 				7637CEEF23591E2500FB6979 /* SelectedPhotoCellModel.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
