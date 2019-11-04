@@ -25,13 +25,10 @@ extension HotshotAPI {
     }
     
     private func handleFindSimilar(_ response: AFDataResponse<Any>) {
-        guard let data = response.data else { return }
-        let decoder = JSONDecoder()
-        var result = FindSimilarResult(error: false, celebs: [Celebrity]())
-        if let celebs = try? decoder.decode([Celebrity].self, from: data) {
+        var result = FindSimilarResult(error: true, celebs: [Celebrity]())
+        if let data = response.data, let celebs = try? JSONDecoder().decode([Celebrity].self, from: data) {
+            result.error = false
             result.celebs = celebs
-        } else {
-            result.error = true
         }
         delegate?.findSimilar(result)
     }
