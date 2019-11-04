@@ -22,3 +22,7 @@ final class HotshotAPI {
 protocol ApiTestDelegate: class {
     func findSimilar(_ result: FindSimilarResult)
 }
+
+extension ApiTestDelegate {
+    func findSimilar(_ result: FindSimilarResult) { }
+}
