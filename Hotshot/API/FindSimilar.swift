@@ -13,7 +13,6 @@ extension HotshotAPI {
     func findSimilar(image: UIImage) {
         guard let imgData = image.jpegData(compressionQuality: 1.0) else { return }
         let adress = HotshotAPI.apiAdress + HotshotAPI.RequestAdress.findSimilar.rawValue
-        print(adress)
         let imgName = "\(UUID.init().uuidString).jpeg"
         AF.upload(multipartFormData: { multipartFormData in
             multipartFormData.append(imgData, withName: "image", fileName: imgName, mimeType: "image/jpeg")
