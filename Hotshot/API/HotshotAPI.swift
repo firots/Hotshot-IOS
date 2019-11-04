@@ -16,6 +16,10 @@ final class HotshotAPI {
     enum RequestAdress: String {
         case findSimilar = "/find_similar"
     }
+    
+    init(delegate: HotshotAPIDelegate?) {
+        self.delegate = delegate
+    }
 }
 
 protocol HotshotAPIDelegate: class {
