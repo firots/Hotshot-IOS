@@ -11,7 +11,6 @@ import Alamofire
 
 final class HotshotAPI {
     weak var delegate: HotshotAPIDelegate?
-    static var shared = HotshotAPI()
     static let apiAdress = "http://3.133.153.120:5000"
     
     enum RequestAdress: String {

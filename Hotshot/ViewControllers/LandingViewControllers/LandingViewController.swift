@@ -26,7 +26,6 @@ final class LandingViewController: UIViewController {
 
     func setDelegates() {
         roundedPhotosView.delegate = self
-        HotshotAPI.shared.delegate = self
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,7 +61,8 @@ extension LandingViewController {
 extension LandingViewController: LandingSplitViewDelegate {
     func splitViewTapped(at direction: SplitViewDirections) {
         if direction == .top {
-            HotshotAPI.shared.findSimilar(image: roundedPhotosView.images()[0])
+            let api = HotshotAPI(); api.delegate = self
+            api.findSimilar(image: roundedPhotosView.images()[0])
         } else {
             performSegue(withIdentifier: "AnalyzeSegue", sender: self)
         }
