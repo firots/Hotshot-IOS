@@ -69,7 +69,7 @@ extension LandingViewController: LandingSplitViewDelegate {
     }
 }
 
-extension LandingViewController: ApiTestDelegate {
+extension LandingViewController: HotshotAPIDelegate {
     func findSimilar(_ result: FindSimilarResult) {
         var description = ""
         if !result.error {

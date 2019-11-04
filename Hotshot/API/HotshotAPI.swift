@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 final class HotshotAPI {
-    weak var delegate: ApiTestDelegate?
+    weak var delegate: HotshotAPIDelegate?
     static var shared = HotshotAPI()
     static let apiAdress = "http://3.133.153.120:5000"
     
@@ -19,10 +19,10 @@ final class HotshotAPI {
     }
 }
 
-protocol ApiTestDelegate: class {
+protocol HotshotAPIDelegate: class {
     func findSimilar(_ result: FindSimilarResult)
 }
 
-extension ApiTestDelegate {
+extension HotshotAPIDelegate {
     func findSimilar(_ result: FindSimilarResult) { }
 }
