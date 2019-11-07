@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
-  - TLPhotoPicker (1.9.9)
+  - TLPhotoPicker (2.0.6)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
@@ -13,7 +13,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
-  TLPhotoPicker: 95cbd6d8f66fca5a4ddd8167db5081e1ed676322
+  TLPhotoPicker: ab0d60667c0aad40868e71f787f1fa9a3e8ea7ad
 
 PODFILE CHECKSUM: 2969974a150cf37cda5e8e7e0c88b8ab4d7c1a9c
 

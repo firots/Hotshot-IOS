@@ -103,6 +103,7 @@ extension LandingViewController: RoundedPhotosViewDelegate {
     
     func loadPhotoPicker() {
         let viewController = TLPhotosPickerViewController()
+        viewController.modalPresentationStyle = .overFullScreen
         viewController.delegate = self
         var configure = TLPhotosPickerConfigure()
         configure.photoPicker(maxItems: maxSelections)
@@ -113,21 +114,27 @@ extension LandingViewController: RoundedPhotosViewDelegate {
 
 extension LandingViewController: TLPhotosPickerViewControllerDelegate {
     func addPhoto(tag: String, image: UIImage) {
-        roundedPhotosView.add(image: image)
-        if roundedPhotosView.images().count == 1 {
-            topSplit.unlock()
-        } else if roundedPhotosView.images().count > 1 {
-            bottomSplit.unlock()
-            topSplit.lock()
+        DispatchQueue.main.async {
+            self.roundedPhotosView.add(image: image)
+            if self.roundedPhotosView.images().count == 1 {
+                self.topSplit.unlock()
+            } else if self.roundedPhotosView.images().count > 1 {
+                self.bottomSplit.unlock()
+                self.topSplit.lock()
+            }
         }
     }
     
     func dismissPhotoPicker(withTLPHAssets: [TLPHAsset]) {
-        for item in withTLPHAssets {
-            if let image = item.fullResolutionImage {
-                addPhoto(tag: item.originalFileName ?? "NaN", image: image)
+        DispatchQueue.global(qos: .userInteractive).async { [weak self] in
+            for item in withTLPHAssets {
+                if let image = item.fullResolutionImage {
+                    let resizedImage = image.resize(max: 500)
+                    self?.addPhoto(tag: item.originalFileName ?? "NaN", image: resizedImage)
+                }
             }
         }
+
     }
     func dismissPhotoPicker(withPHAssets: [PHAsset]) {
         // if you want to used phasset.
