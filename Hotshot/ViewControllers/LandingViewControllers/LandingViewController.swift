@@ -47,13 +47,13 @@ extension LandingViewController {
         topSplit.lock()
         topSplit.delegate = self
         topSplit.blurredImageSlideView.startAnimation(direction: .left)
-        topSplit.blurredImageSlideView.setInitialImage(first: true)
+        topSplit.blurredImageSlideView.setInitial(image: BlurredImageSlideView.images.first)
         
         bottomSplit.direction = .bottom
         bottomSplit.lock()
         bottomSplit.delegate = self
         bottomSplit.blurredImageSlideView.startAnimation(direction: .right)
-        bottomSplit.blurredImageSlideView.setInitialImage(first: false)
+        bottomSplit.blurredImageSlideView.setInitial(image: BlurredImageSlideView.images.last)
     }
 }
     

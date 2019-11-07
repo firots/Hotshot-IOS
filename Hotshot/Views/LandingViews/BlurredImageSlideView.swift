@@ -29,11 +29,11 @@ final class BlurredImageSlideView: CustomViewBase {
     
     static func cacheImages() {
         imageIDs.shuffle()
-        cacheImage(id: 1)
-        cacheImage(id: 2)
+        cacheImage(id: imageIDs[0])
+        cacheImage(id: imageIDs[1])
         DispatchQueue.global(qos: .userInteractive).async {
-            for id in imageIDs {
-                if id > 2 { cacheImage(id: id) }
+            for (i, id) in imageIDs.enumerated() {
+                if i > 1 { cacheImage(id: id) }
             }
         }
     }
@@ -71,13 +71,7 @@ extension BlurredImageSlideView {
 
 /* Manage Images */
 extension BlurredImageSlideView {
-    func setInitialImage(first: Bool) {
-        let image: UIImage?
-        if first {
-            image = BlurredImageSlideView.images.first
-        } else {
-            image = BlurredImageSlideView.images.last
-        }
+    func setInitial(image: UIImage?) {
         imageView.image = image
     }
     
