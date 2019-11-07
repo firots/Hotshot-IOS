@@ -29,11 +29,11 @@ final class BlurredImageSlideView: CustomViewBase {
     
     static func cacheImages() {
         imageIDs.shuffle()
-        cacheImage(id: imageIDs[0])
-        cacheImage(id: imageIDs[1])
+        cacheImage(id: 1)
+        cacheImage(id: 2)
         DispatchQueue.global(qos: .userInteractive).async {
             for id in imageIDs {
-                if id > 1 { cacheImage(id: id) }
+                if id > 2 { cacheImage(id: id) }
             }
         }
     }
