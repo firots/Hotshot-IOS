@@ -20,8 +20,7 @@ final class BlurredImageSlideView: CustomViewBase {
     var direction = BlurredImageSlideViewDirection.left
     
     static var images = [UIImage]()
-    static let minID = 1
-    static let maxID = 24
+    static var imageIDs = Array(1...24)
     
     override func awakeFromNib() {
         setVisuals()
@@ -29,13 +28,20 @@ final class BlurredImageSlideView: CustomViewBase {
     }
     
     static func cacheImages() {
+        imageIDs.shuffle()
+        cacheImage(id: imageIDs[0])
+        cacheImage(id: imageIDs[1])
         DispatchQueue.global(qos: .userInteractive).async {
-            for i in minID...maxID {
-                let image = UIImage(named: createImageName(id: i))
-                if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
-                    BlurredImageSlideView.images.append(bImage)
-                }
+            for id in imageIDs {
+                if id > 1 { cacheImage(id: id) }
             }
+        }
+    }
+    
+    private static func cacheImage(id: Int) {
+        let image = UIImage(named: createImageName(id: id))
+        if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
+            BlurredImageSlideView.images.append(bImage)
         }
     }
     
@@ -65,20 +71,18 @@ extension BlurredImageSlideView {
 
 /* Manage Images */
 extension BlurredImageSlideView {
-    func changeImage() {
-        imageView.image = getRandomImage()
+    func setInitialImage(first: Bool) {
+        let image: UIImage?
+        if first {
+            image = BlurredImageSlideView.images.first
+        } else {
+            image = BlurredImageSlideView.images.last
+        }
+        imageView.image = image
     }
     
     func getRandomImage() -> UIImage {
         return BlurredImageSlideView.images.randomElement()!
-    }
-    
-    func loadRandomImageFromDisk() {
-        let id = Int.random(in: BlurredImageSlideView.minID..<BlurredImageSlideView.maxID + 1)
-        let image = UIImage(named: BlurredImageSlideView.createImageName(id: id))
-        if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
-            imageView.image = bImage
-        }
     }
 }
 
