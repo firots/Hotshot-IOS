@@ -16,18 +16,16 @@ extension UIImage {
         return scale(by: ratio)
     }
     
+
+    
     func scale(by ratio: CGFloat) -> UIImage {
         let newSize = CGSize(width: self.size.width * ratio, height: self.size.height * ratio)
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
         
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        self.draw(in: rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage ?? self
+        let renderer = UIGraphicsImageRenderer(size: newSize)
+        return renderer.image { (context) in
+            self.draw(in: rect)
+        }
     }
-    
-
 }
 

@@ -20,6 +20,8 @@ final class BlurredImageSlideView: CustomViewBase {
     var direction = BlurredImageSlideViewDirection.left
     
     static var images = [UIImage]()
+    static let minID = 1
+    static let maxID = 24
     
     override func awakeFromNib() {
         setVisuals()
@@ -27,12 +29,18 @@ final class BlurredImageSlideView: CustomViewBase {
     }
     
     static func cacheImages() {
-        for i in 1...24 {
-            let image = UIImage(named: "hotshotphoto (\(String(i))).jpg")
-            if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
-                BlurredImageSlideView.images.append(bImage)
+        DispatchQueue.global(qos: .userInteractive).async {
+            for i in minID...maxID {
+                let image = UIImage(named: createImageName(id: i))
+                if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
+                    BlurredImageSlideView.images.append(bImage)
+                }
             }
         }
+    }
+    
+    static func createImageName(id: Int) -> String {
+        "hotshotphoto (\(String(id))).jpg"
     }
 }
 
@@ -63,6 +71,14 @@ extension BlurredImageSlideView {
     
     func getRandomImage() -> UIImage {
         return BlurredImageSlideView.images.randomElement()!
+    }
+    
+    func loadRandomImageFromDisk() {
+        let id = Int.random(in: BlurredImageSlideView.minID..<BlurredImageSlideView.maxID + 1)
+        let image = UIImage(named: BlurredImageSlideView.createImageName(id: id))
+        if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
+            imageView.image = bImage
+        }
     }
 }
 
