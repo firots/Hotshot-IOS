@@ -16,8 +16,6 @@ extension UIImage {
         return scale(by: ratio)
     }
     
-
-    
     func scale(by ratio: CGFloat) -> UIImage {
         let newSize = CGSize(width: self.size.width * ratio, height: self.size.height * ratio)
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)

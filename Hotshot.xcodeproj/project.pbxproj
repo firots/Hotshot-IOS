@@ -88,6 +88,7 @@
 		76C277B2235B945200C1F8DD /* hamburger@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277AF235B945200C1F8DD /* hamburger@3x.png */; };
 		76C277B3235B945200C1F8DD /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 76C277B0235B945200C1F8DD /* hamburger.png */; };
 		76DF53F52370C9A600DA05B2 /* FindSimilar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF53F42370C9A600DA05B2 /* FindSimilar.swift */; };
+		76F172BA2375C23200FCED27 /* UIIMage-BundleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F172B92375C23200FCED27 /* UIIMage-BundleName.swift */; };
 		76F4A57423592CAB00822CC1 /* SelectedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */; };
 		87D02F1EA2A764AF5B31BB53 /* Pods_Hotshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBC4EB5C0DAA490B1AF421E /* Pods_Hotshot.framework */; };
 /* End PBXBuildFile section */
@@ -181,6 +182,7 @@
 		76C277AF235B945200C1F8DD /* hamburger@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hamburger@3x.png"; sourceTree = "<group>"; };
 		76C277B0235B945200C1F8DD /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
 		76DF53F42370C9A600DA05B2 /* FindSimilar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSimilar.swift; sourceTree = "<group>"; };
+		76F172B92375C23200FCED27 /* UIIMage-BundleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage-BundleName.swift"; sourceTree = "<group>"; };
 		76F4A57323592CAB00822CC1 /* SelectedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -418,6 +420,7 @@
 				760BB571236DC6BE0085ED1C /* UIColor-NetHex.swift */,
 				76864385236EF057007F7A22 /* NSMutableAttributedString+SetAttr.swift */,
 				76152BA72374740B001B5CE4 /* UIImage-Resize.swift */,
+				76F172B92375C23200FCED27 /* UIIMage-BundleName.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				760BB562236DA8AB0085ED1C /* BlurredImageSlideView.swift in Sources */,
 				7610D962236F60310006BC1F /* HotshotAPI.swift in Sources */,
 				7637CEEF23591E2500FB6979 /* SelectedPhotoCellModel.swift in Sources */,
+				76F172BA2375C23200FCED27 /* UIIMage-BundleName.swift in Sources */,
 				7664546F2357AE89009E1A28 /* LandingViewController.swift in Sources */,
 				766454A52357CA03009E1A28 /* HasCollectionViewDataSource.swift in Sources */,
 				7637CEC72358FFD800FB6979 /* UIScrollView+EmptyDataSet.m in Sources */,

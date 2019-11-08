@@ -39,7 +39,7 @@ final class BlurredImageSlideView: CustomViewBase {
     }
     
     private static func cacheImage(id: Int) {
-        let image = UIImage(named: createImageName(id: id))
+        let image = UIImage(bundleName: createImageName(id: id))?.scale(by: 0.25)
         if let dImage = image?.desaturate(), let bImage = dImage.blur(radius: 7.5)  {
             BlurredImageSlideView.images.append(bImage)
         }
